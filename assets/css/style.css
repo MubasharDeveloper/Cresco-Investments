@@ -12189,3 +12189,14 @@ ul.list-regular li::after {
 		font: bold 2em 'Outfit', sans-serif;
 	}
 }
+
+
+/* ====================== Custom CSS ==================== */
+
+.text-turncate-5{
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
