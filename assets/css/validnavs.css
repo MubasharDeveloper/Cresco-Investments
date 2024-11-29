@@ -567,6 +567,9 @@ nav.validnavs.navbar-full .navbar-collapse ul.nav {
 	text-transform: capitalize;
 	background: transparent;
 }
+.validnavs a:hover {
+	border-bottom: 1px solid white;
+}
 
 .validnavs a:focus,
 .validnavs a:hover,
