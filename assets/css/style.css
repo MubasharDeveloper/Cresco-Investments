@@ -2777,7 +2777,7 @@ p {
 
 	nav.navbar.navbar-style-one.validnavs.navbar-fixed.no-background {
 		box-shadow: inherit;
-		top: 50px;
+		/* top: 50px; */
 	}
 
 	nav.navbar.navbar-style-one.validnavs.navbar-fixed.no-background .navbar-header {
