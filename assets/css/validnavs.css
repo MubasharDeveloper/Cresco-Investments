@@ -562,7 +562,7 @@ nav.validnavs.navbar-full .navbar-collapse ul.nav {
 }
 
 .validnavs a {
-	color: #232323;
+	color: #fff;
 	font-weight: 600;
 	text-transform: capitalize;
 	background: transparent;
@@ -2689,7 +2689,7 @@ nav.navbar.validnavs .navbar-collapse.collapse.collapse-mobile.show {
 	animation: sticky 0.4s;
 	box-shadow: var(--box-shadow);
 	z-index: 9999;
-	background: #ffffff !important;
+	background: black !important;
 }
 
 @keyframes fadeIn {
