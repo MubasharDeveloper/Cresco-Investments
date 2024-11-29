@@ -31,29 +31,29 @@
     <!-- ========== End Stylesheet ========== -->
      <style>
         .read-more-btn{
-        text-decoration: none;
-        color: #fff;
-        font-size: 14px;
-        padding: 10px 18px;
-        border: 2px solid #fff;
-        background-color: transparent;
-        border-radius: 20px;
-        display: flex;
-        gap: 4px;
-        align-items: center;
-        width: fit-content;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      padding: 2px 10px;
+      border: 2px solid #000;
+      background-color: transparent;
+      border-radius: 40px;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      width: fit-content;
     }
     .read-more-btn span{
-        text-decoration: none;
-        font-size: 14px;
+      text-decoration: none;
+      font-size: 14px;
     }
     .read-more-btn {
-        color: #fff !important;
+      color: #000 !important;
     }
          .scrollbar {
-      position: fixed;
+      position: absolute;
       left: 20px;
-      top: calc(50% - 25vh);
+      top: 100%;
       height: 30vh; /* Adjusted height for 5 dots */
       width: 2px;
       border-radius: 2px;
@@ -61,12 +61,12 @@
     }
 
     .dot {
-      width: 5px;
-      height: 5px;
+      width: 6px;
+      height: 7px;
       border-radius: 50%;
       position: absolute;
       left: -2px;
-      background: white;
+      background: black;
       transform: translateY(-50%);
       font-size: 10px;
       white-space: nowrap;
@@ -121,6 +121,14 @@
     .dot-text {
         position: absolute;
         top: -10px;
+        width: 85px;
+        margin-left: 15px;
+        white-space: break-spaces;
+        line-height: 1;
+    }
+    .dot-text-2 {
+        position: absolute;
+        top: 0px;
         width: 85px;
         margin-left: 15px;
         white-space: break-spaces;
@@ -222,6 +230,13 @@
                         </div>
                         
                     </div>
+                    <div class="col-6">
+                        <div>
+                        
+                        </div>
+
+
+                    </div>
                     <!-- /.navbar-collapse -->
 
                 </div>         
@@ -236,30 +251,7 @@
        
         <!-- End Navigation -->
     </header>
-    <div style="position:fixed;z-index: 1111;">
-        <!-- <section class="wrapper-section">
-          <h1>1</h1>
-        </section>
-        <section class="wrapper-section">
-          <h1>2</h1>
-        </section>
-        <section class="wrapper-section">
-          <h1>3</h1>
-        </section>
-        <section class="wrapper-section">
-          <h1>4</h1>
-        </section>
-        <section class="wrapper-section">
-          <h1>5</h1>
-        </section> -->
-      
-           <div class="scrollbar">
-            <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
-            <div class="dot" style="top: 33%;"><span class="dot-text">About Us</span></div>
-            <div class="dot" style="top: 66%;"><span class="dot-text">Set Specific Goals</span></div>
-            <div class="dot" style="top: 100%;"><span class="dot-text">Active Financial Goals</span></div>
-          </div>
-      </div>
+    
       <div class="vertical-button">
         <button>
           <div class="arrow-container">
@@ -273,122 +265,187 @@
 
     <!-- Start Banner Area 
     ============================================= -->
-    <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light" id="home">
-        <!-- Slider main container -->
-        <div class="banner-fade">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-
-                <!-- Single Item -->
-                <div class="swiper-slide banner-style-one">
-                    <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/banner-new.jpg);"></div>
-                    <div class="container">
-                        <div class="row align-center">
-                            <div class="col-6" style="margin-top:15rem">
-                                <div class="content">
-                                    <h2><strong>Achieve your</strong> Financial Goals</h2>
-                                    
-                                </div>
-                            </div>
-                            <!-- <div class="col-6">
-                                <div class="content">
-                                    <h4>Coaching & Consulting</h4>
-                                    <h2><strong>Strategies for</strong> Enduring Success</h2>
-                                    <div class="button mt-40">
-                                        <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a>
+    <div class="h-100">
+        <div style="position:absolute;z-index: 1111;top:25%;left: 2%;">
+            <!-- <section class="wrapper-section">
+              <h1>1</h1>
+            </section>
+            <section class="wrapper-section">
+              <h1>2</h1>
+            </section>
+            <section class="wrapper-section">
+              <h1>3</h1>
+            </section>
+            <section class="wrapper-section">
+              <h1>4</h1>
+            </section>
+            <section class="wrapper-section">
+              <h1>5</h1>
+            </section> -->
+          
+               <div class="scrollbar">
+                <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
+                <div class="dot bg-white" style="top: 33%;"><span class="dot-text">About Us</span></div>
+                <div class="dot bg-white" style="top: 66%;"><span class="dot-text">Set Specific Goals</span></div>
+                <div class="dot bg-white" style="top: 100%;"><span class="dot-text">Active Financial Goals</span></div>
+              </div>
+          </div>
+          <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light" id="home">
+            <!-- Slider main container -->
+            
+            <div class="banner-fade">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+    
+                    <!-- Single Item -->
+                    <div class="swiper-slide banner-style-one">
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/banner-new.jpg);"></div>
+                        <div class="container">
+                            <div class="row align-center">
+                                <div class="col-6" style="margin-top:15rem">
+                                    <div class="content">
+                                        <h2><strong>Achieve your</strong> Financial Goals</h2>
+                                        
                                     </div>
                                 </div>
-                            </div> -->
+                                <!-- <div class="col-6">
+                                    <div class="content">
+                                        <h4>Coaching & Consulting</h4>
+                                        <h2><strong>Strategies for</strong> Enduring Success</h2>
+                                        <div class="button mt-40">
+                                            <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
                         </div>
+                        <!-- Shape -->
+                        
+                        <!-- End Shape -->
                     </div>
-                    <!-- Shape -->
-                    
-                    <!-- End Shape -->
-                </div>
-                <!-- End Single Item -->
-
-                <!-- Single Item -->
-                <div class="swiper-slide banner-style-one">
-                    <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/banner-2.jpg);"></div>
-                    <div class="container">
-                        <div class="row align-center">
-                            <div class="col-xl-7 offset-xl-5">
-                                <div class="content">
-                                    <h4>Coaching & Consulting</h4>
-                                    <h2><strong>Strategies for</strong> Enduring Success</h2>
-                                    <div class="button mt-40">
-                                        <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a>
+                    <!-- End Single Item -->
+    
+                    <!-- Single Item -->
+                    <div class="swiper-slide banner-style-one">
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/banner-2.jpg);"></div>
+                        <div class="container">
+                            <div class="row align-center">
+                                <div class="col-xl-7 offset-xl-5">
+                                    <div class="content">
+                                        <h4>Coaching & Consulting</h4>
+                                        <h2><strong>Strategies for</strong> Enduring Success</h2>
+                                        <div class="button mt-40">
+                                            <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- Shape -->
+                        <div class="banner-shape-bg">
+                            <img src="assets/img/shape/4.png" alt="Shape">
+                        </div>
+                        <!-- End Shape -->
                     </div>
-                    <!-- Shape -->
-                    <div class="banner-shape-bg">
-                        <img src="assets/img/shape/4.png" alt="Shape">
-                    </div>
-                    <!-- End Shape -->
+                    <!-- End Single Item -->
+    
                 </div>
-                <!-- End Single Item -->
+    
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+    
+            </div>  
+        </div>
+        </div>
 
+    
+    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding bg-white">
+        <div class="container">
+            <div style="position:absolute;z-index: 1111;top:19%;left:70px">
+                <!-- <section class="wrapper-section">
+                  <h1>1</h1>
+                </section>
+                <section class="wrapper-section">
+                  <h1>2</h1>
+                </section>
+                <section class="wrapper-section">
+                  <h1>3</h1>
+                </section>
+                <section class="wrapper-section">
+                  <h1>4</h1>
+                </section>
+                <section class="wrapper-section">
+                  <h1>5</h1>
+                </section> -->
+              
+                   <div class="scrollbar" style="left:-30px !important">
+                    <div class="dot active active" style="top: 0%;color: #000 !important;"><span class="dot-text-2">Active</span></div>
+                    <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span class="dot-text-2">About Us</span></div>
+                    <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span class="dot-text-2">Set Specific Goals</span></div>
+                    <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span class="dot-text-2">Active Financial Goals</span></div>
+                  </div>
+              </div>
+            <div class="row align-center default-padding-bottom">
+      
+                <div class="about-style-two col-lg-4 offset-lg-2">
+                    <h2 class="title text-dark"> Invest in your future</h2>
+                    <p>
+                        With over a decade of proven excellence, AIX Investment Group has earned its reputation as a trusted leader in the financial industry. Our collaboration with industry top experts allows us to provide diverse investment solutions through our several regulated entities.                
+                    </p>
+                    <a href="#" class="read-more-btn">
+                      <span>Read More</span>
+                    </a>
+                </div>
+      
+                <div class="col-lg-6 about-style-two">
+                  <div class="thumb">
+                    <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
+                  </div>
+                </div>
+      
             </div>
-
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
-
-        </div>  
-    </div>
-    <div class="container">
-        <div class="about-style-two-area overflow-hidden bg-contain
-         default-padding">
-            <div class="container">
-                <div class="row align-center">
-          
-                    <div class="about-style-two col-lg-6">
-                        <h2 class="title">Empowering Tomorrow, <br> Together</h2>
-                        <p>
-                            We Are The Future, the dynamic partnership vertical of AIX Investment Group, unites visionaries, innovators, and changemakers to shape a better tomorrow. Through impactful partnerships, we amplify our collective impact to tackle global challenges, foster sustainable development, and empower communities worldwide. Together, we achieve dreams and build a brighter future.
-                        </p>
-                        <a href="#" class="read-more-btn">
-                          <span>Read More</span>
-                          <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-          
-                    <div class="col-lg-6 about-style-two">
-                      <div class="thumb">
-                        <img src="assets/img/about-1.jpg" alt="Image Not Found">
+            
+            <div class="row align-center">
+                <div style="position:absolute;z-index: 1111;top:55%;left:70px">
+                    <!-- <section class="wrapper-section">
+                      <h1>1</h1>
+                    </section>
+                    <section class="wrapper-section">
+                      <h1>2</h1>
+                    </section>
+                    <section class="wrapper-section">
+                      <h1>3</h1>
+                    </section>
+                    <section class="wrapper-section">
+                      <h1>4</h1>
+                    </section>
+                    <section class="wrapper-section">
+                      <h1>5</h1>
+                    </section> -->
+                  
+                       <div class="scrollbar" style="left:-30px !important">
+                        <div class="dot" style="top: 0%;color: #000 !important;"><span class="dot-text-2">Active</span></div>
+                        <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span class="dot-text-2">About Us</span></div>
+                        <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span class="dot-text-2">Set Specific Goals</span></div>
+                        <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span class="dot-text-2">Active Financial Goals</span></div>
                       </div>
-                    </div>
-          
+                  </div>
+                <div class="about-style-two col-lg-4 offset-lg-2">
+                    <h2 class="title text-dark"> Empowering Tomorrow, <br> Together</h2>
+                    <p>
+                        We Are The Future, the dynamic partnership vertical of AIX Investment Group, unites visionaries, innovators, and changemakers to shape a better tomorrow. Through impactful partnerships, we amplify our collective impact to tackle global challenges, foster sustainable development, and empower communities worldwide. Together, we achieve dreams and build a brighter future.              
+                    </p>                
                 </div>
-            </div>
-          </div>
-        <div class="about-style-two-area overflow-hidden bg-contain  default-padding">
-            <div class="container">
-                <div class="row align-center">
-          
-                    <div class="about-style-two col-lg-6">
-                        <h2 class="title">Empowering Tomorrow, <br> Together</h2>
-                        <p>
-                            We Are The Future, the dynamic partnership vertical of AIX Investment Group, unites visionaries, innovators, and changemakers to shape a better tomorrow. Through impactful partnerships, we amplify our collective impact to tackle global challenges, foster sustainable development, and empower communities worldwide. Together, we achieve dreams and build a brighter future.
-                        </p>
-                        <a href="#" class="read-more-btn">
-                          <span>Read More</span>
-                          <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-          
-                    <div class="col-lg-6 about-style-two">
-                      <div class="thumb">
-                        <img src="assets/img/about-1.jpg" alt="Image Not Found">
-                      </div>
-                    </div>
-          
+      
+                <div class="col-lg-6 about-style-two">
+                  <div class="thumb">
+                    <img src="assets/img/what-we-doimg.jpg" alt="Image Not Found">
+                  </div>
                 </div>
+      
             </div>
-          </div>
-    </div>
+        </div>
+      </div>
     
     <!-- End Faq -->
 

@@ -567,10 +567,23 @@ nav.validnavs.navbar-full .navbar-collapse ul.nav {
 	text-transform: capitalize;
 	background: transparent;
 }
-.validnavs a:hover {
+/* .validnavs a:hover {
 	border-bottom: 1px solid white;
-}
-
+} */
+.validnavs a::after {
+	content: ""; /* Empty content for the pseudo-element */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0; /* Start with no width */
+	height: 2px; /* Thickness of the border */
+	background: white; /* Color of the border */
+	transition: width 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .validnavs a:hover::after {
+	width: 100%; /* Expand the border to full width */
+  }
 .validnavs a:focus,
 .validnavs a:hover,
 .validnavs a.active {
@@ -1113,7 +1126,7 @@ nav.navbar.validnavs ul.nav>li.dropdown>a.dropdown-toggle::after {
 nav.navbar.validnavs.navbar-fixed {
 	display: block;
 	width: 100%;
-	z-index: 100;
+	z-index: 11111;
 	box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
 	top: 0;
 }
@@ -2524,7 +2537,9 @@ nav.navbar.validnavs.brand-center {
 
 @media (min-width: 1024px) {
 	nav.navbar ul.nav>li>a {
-		padding: 30px 30px;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
 		font-weight: 500;
 		font-size: 17px;
 		text-transform: capitalize;
