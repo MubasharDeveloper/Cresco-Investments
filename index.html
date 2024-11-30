@@ -393,6 +393,14 @@
                 bottom: -80px;
             }
         }
+        .sec-hero-heading{
+            font-size: 75px !important;
+        }
+        @media(max-width: 1280px){
+            .sec-hero-heading{
+                font-size: 58px !important;
+            }
+        }
     </style>
 
 </head>
@@ -524,16 +532,23 @@
 
 
     <section style="height: 900px !important;" id="goals">
-        <div class="row h-100" style="max-width: 100vw !important">
-            <div class="col-12 col-lg-6 d-none d-lg-block h-100 px-0 bg-dark position-relative">
-                <h1 class="sec-hero-heading text-white d-flex align-center justify-content-center position-absolute mb-5"><strong>Achieve Your <br> Financial Goals</strong></h1>
-                <div style="position:absolute !important; top: calc(50vh - 100px) !important; left: 100px !important;">
+        <div class="custom-container d-none d-lg-block">
+            <div class="position-absolute">
+                <div class="nav-section-absolute" style="position:absolute !important; top: calc(50vh - 100px) !important;">
                     <div class="scrollbar position-relative" style="background: #fff !important; z-index: 9;">
                         <div class="dot active" style="top: 0%;"><span class="dot-text text-white">Active Financial Goals</span></div>
                         <div class="dot bg-white" style="top: 33%;"><span class="dot-text text-white">Invest For Future</span></div>
                         <div class="dot bg-white" style="top: 66%;"><span class="dot-text text-white">Set Specific Goals</span></div>
                         <div class="dot bg-white" style="top: 100%;"><span class="dot-text text-white">Trading</span></div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="row h-100" style="max-width: 100vw !important">
+            <div class="col-12 col-lg-6 d-none d-lg-block h-100 px-0 bg-dark position-relative">
+                <h1 class="sec-hero-heading text-white pb-5 d-flex align-items-end justify-content-center ms-5 h-100" style=""><strong>Achieve Your <br> Financial Goals</strong></h1>
+                <div class="d-flex align-items-center justify-content-center text-center ms-5 pn-5 h-100">
+                    <img src="assets/img/goals.png"  alt="Goals"  style="max-width: 400px !important; width: 100% !important;">
                 </div>
             </div>
             <div class="col-12 col-lg-6 px-0 bg-white h-100">
