@@ -212,6 +212,143 @@
             padding: 43px 0px 8px;
             color: #b2764a;
         }
+        .sec-hero-heading {
+            font-size: 60px;
+            position: absolute !important;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+
+        .last-layer-card {
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 12rem;
+            background-color: #e5e5e5;
+            border-radius: 15px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .rounded-cir {
+            padding: 20px 22px;
+            border-radius: 50%;
+        }
+
+        .left-side-pill {
+
+            .inner-main {
+                background-color: hsl(0deg 0% 40.78%);
+                padding: 8px 20px 8px 10px;
+                border-radius: 50px;
+                top: 20rem;
+                left: -78px;
+
+                & img {
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .left-small-card {
+            position: absolute;
+            left: -90px;
+            background-color: #eeeeee;
+            bottom: -55px;
+            border-radius: 20px;
+
+            .img-wrapper {
+                width: 270px;
+                border-radius: 0 0 20px 20px;
+
+                & img {
+                    border-radius: 0 0 20px 20px;
+
+                    width: 100%;
+                }
+            }
+        }
+        .right-small-card {
+            position: absolute;
+            right: -120px;
+            background-color: #eeeeee;
+            bottom: 29px;
+            border-radius: 20px;
+
+            .content-upper {
+                border-radius: 20px 20px 0 0;
+                background-color: rgb(71 68 68) !important;
+            }
+
+            .content-lower {
+                background-color: #eeeeee;
+            }
+        }
+
+        .both-side-boll {
+            background-color: #e5e5e5;
+            position: absolute;
+            top: 80px;
+            left: 40%;
+            border-radius: 50%;
+
+            .img-wrapper {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+
+                & img {
+                    border-radius: 50%;
+
+                    width: 100%;
+                    height: 100%;
+
+                }
+            }
+        }
+
+        .right-corner-icons {
+            position: absolute;
+            right: -90px;
+            bottom: -80px;
+
+            .icon-wrap {
+                width: 50px !important;
+                height: 60px !important;
+                background-color: black;
+                border-radius: 50%;
+                padding: 11px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .second-last-layer {
+            .img-wrapper {
+                max-width: 420px;
+                max-height: 420px;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .card-middle {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            height: 100% !important;
+            position: relative !important;
+        }
     </style>
 
 </head>
@@ -249,7 +386,7 @@
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars text-white"></i>
                     </button>
                 </div>
                 <!-- End Header Navigation -->
@@ -342,6 +479,62 @@
         </div>
     </div>
 
+
+    <section style="height: 900px !important;" id="goals">
+        <div class="row h-100">
+            <div class="col-12 col-lg-6 d-none d-lg-block h-100 px-0 bg-dark position-relative">
+                <h1
+                    class="sec-hero-heading text-white d-flex align-center justify-content-center position-absolute mb-5">
+                    <strong>Achieve Your <br> Financial Goals</strong></h1>
+
+            </div>
+            <div class="col-12 col-lg-6 px-0 bg-white h-100">
+                <div class="card-middle">
+                    <div class="last-layer-card position-absolute p-1 ">
+                        <div class="upper-content position-relative ">
+                            <div class="upper d-flex justify-content-between ">
+                                <div class="content px-2 py-3">
+                                    <h1 class="card-title mb-0 ">$1,89K </h1>
+                                    <p class="m-0">Available Amount</p>
+                                </div>
+                                <div class="button">
+                                    <button class="rounded-cir bg-black text-white  border-0"> 12</button>
+                                </div>
+                            </div>
+                            <div class="second-last-layer">
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/circle.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="left-small-card">
+                                <div class="content px-2 pt-3">
+                                    <h1 class="card-title mb-0 ">$1,89K </h1>
+                                    <p class="m-0">Available Amount</p>
+                                </div>
+                                <div class="img-wrapper">
+                                    <img src="./assets/img/graph.jpg" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="right-corner-icons d-flex justify-content-start align-item-center">
+                            <div class="icon-wrap">
+                                <img src="./assets/img/icon/twitter-brands-solid.svg" alt="">
+                            </div>
+                            <div class="icon-wrap">
+                                <img src="./assets/img/icon/instagram-brands-solid.svg" alt="">
+                            </div>
+                            <div class="icon-wrap">
+                                <img src="./assets/img/icon/facebook-brands-solid.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- <section class="container-fluid px-0 mt-3">
         <div class="news-section-top">

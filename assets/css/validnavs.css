@@ -2004,7 +2004,7 @@ nav.navbar.validnavs.brand-center {
 	nav.navbar.validnavs {
 		position: relative !important;
 		box-shadow: none !important;
-		background: #ffffff !important;
+		background: #000 !important;
 	}
 
 	a.navbar-brand {
