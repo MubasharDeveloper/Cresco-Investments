@@ -29,182 +29,188 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <!-- ========== End Stylesheet ========== -->
-     <style>
-        .read-more-btn{
-      text-decoration: none;
-      color: #000;
-      font-size: 14px;
-      padding: 2px 10px;
-      border: 2px solid #000;
-      background-color: transparent;
-      border-radius: 40px;
-      display: flex;
-      gap: 4px;
-      align-items: center;
-      width: fit-content;
-    }
-    .read-more-btn span{
-      text-decoration: none;
-      font-size: 14px;
-    }
-    .read-more-btn {
-      color: #000 !important;
-    }
-         .scrollbar {
-      position: absolute;
-      left: 20px;
-      top: 100%;
-      height: 30vh; /* Adjusted height for 5 dots */
-      width: 2px;
-      border-radius: 2px;
-      background: black;
-    }
+    <style>
+        .read-more-btn {
+            text-decoration: none;
+            color: #000;
+            font-size: 14px;
+            padding: 2px 10px;
+            border: 2px solid #000;
+            background-color: transparent;
+            border-radius: 40px;
+            display: flex;
+            gap: 4px;
+            align-items: center;
+            width: fit-content;
+        }
 
-    .dot {
-      width: 6px;
-      height: 7px;
-      border-radius: 50%;
-      position: absolute;
-      left: -2px;
-      background: black;
-      transform: translateY(-50%);
-      font-size: 10px;
-      white-space: nowrap;
-    }
+        .read-more-btn span {
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-    .dot.active {
-      background: gray; /* Highlight the active dot */
-      color: #fff;
-    }
+        .read-more-btn {
+            color: #000 !important;
+        }
 
-    .scrollball span {
-      position: absolute;
-      left: 15px;
-      top: -4px;
-    }
-    .wrapper-section {
-      height: 100vh;
-      position: relative;
-    }
+        .scrollbar {
+            position: absolute;
+            left: 20px;
+            top: 100%;
+            height: 200px;
+            /* Adjusted height for 5 dots */
+            width: 2px;
+            border-radius: 2px;
+            background: black;
+        }
 
-    .wrapper-section h1 {
-      text-align: center;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      margin: 0;
-      font-weight: 600;
-      font-size: 40vw;
-      color: #fff;
-    }
+        .dot {
+            width: 6px;
+            height: 7px;
+            border-radius: 50%;
+            position: absolute;
+            left: -2px;
+            background: black;
+            transform: translateY(-50%);
+            font-size: 10px;
+            white-space: nowrap;
+        }
 
-    .wrapper-section:nth-child(1) {
-      background: #DFDDD7;
-    }
+        .dot.active {
+            background: gray;
+            /* Highlight the active dot */
+            color: #fff;
+        }
 
-    .wrapper-section:nth-child(2) {
-      background: #c5d5c5;
-    }
+        .scrollball span {
+            position: absolute;
+            left: 15px;
+            top: -4px;
+        }
 
-    .wrapper-section:nth-child(3) {
-      background: #9fa9a3;
-    }
+        .wrapper-section {
+            height: 100vh;
+            position: relative;
+        }
 
-    .wrapper-section:nth-child(4) {
-      background: #e3e0cc;
-    }
+        .wrapper-section h1 {
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            font-weight: 600;
+            font-size: 40vw;
+            color: #fff;
+        }
 
-    .wrapper-section:nth-child(5) {
-      background: #77a8a8;
-    }
-    .dot-text {
-        position: absolute;
-        top: -10px;
-        width: 85px;
-        margin-left: 15px;
-        white-space: break-spaces;
-        line-height: 1;
-    }
-    .dot-text-2 {
-        position: absolute;
-        top: 0px;
-        width: 85px;
-        margin-left: 15px;
-        white-space: break-spaces;
-        line-height: 1;
-    }
-    .vertical-button {
-    position: absolute;
-    top: 100%;
-    left: 50px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 111;
-}
+        .wrapper-section:nth-child(1) {
+            background: #DFDDD7;
+        }
 
-.vertical-button button {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(24,24,24,1) 0%, rgba(24,24,24,1) 29%, rgba(122,122,122,1) 100%);
-    color: white; /* White text */
-  border: none;
-  padding: 8px; /* Padding for the button */
-  border-radius: 25px !important;
-  cursor: pointer;
-  font-size: 16px; /* Adjust text size */
-  transition: background 0.3s ease, transform 0.2s ease;
-}
+        .wrapper-section:nth-child(2) {
+            background: #c5d5c5;
+        }
 
-.vertical-button button:hover {
-  background: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight enlargement on hover */
-}
+        .wrapper-section:nth-child(3) {
+            background: #9fa9a3;
+        }
 
-.arrow-container {
-  display: flex;
-  flex-direction: column; /* Stack line and arrow vertically */
-  align-items: center; /* Center align items */
-  margin-top: 10px; /* Space between button and arrow */
-}
+        .wrapper-section:nth-child(4) {
+            background: #e3e0cc;
+        }
 
-.line {
-  width: 2px; /* Width of the line */
-  height: 40px; /* Height of the line */
-  background-color: white; /* Line color */
-}
+        .wrapper-section:nth-child(5) {
+            background: #77a8a8;
+        }
 
-.arrow {
-  font-size: 15px; /* Adjust arrow size */
-}
+        .dot-text {
+            position: absolute;
+            top: -10px;
+            width: 85px;
+            margin-left: 15px;
+            white-space: break-spaces;
+            line-height: 1;
+        }
 
+        .dot-text-2 {
+            position: absolute;
+            top: 0px;
+            width: 85px;
+            margin-left: 15px;
+            white-space: break-spaces;
+            line-height: 1;
+        }
 
-     </style>
+        .vertical-button {
+            position: absolute;
+            top: 100%;
+            left: 50px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 111;
+        }
+
+        .vertical-button button {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(180deg, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, 1) 29%, rgba(122, 122, 122, 1) 100%);
+            color: white;
+            /* White text */
+            border: none;
+            padding: 8px;
+            /* Padding for the button */
+            border-radius: 25px !important;
+            cursor: pointer;
+            font-size: 16px;
+            /* Adjust text size */
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .vertical-button button:hover {
+            background: #0056b3;
+            /* Darker blue on hover */
+            transform: scale(1.05);
+            /* Slight enlargement on hover */
+        }
+
+        .arrow-container {
+            display: flex;
+            flex-direction: column;
+            /* Stack line and arrow vertically */
+            align-items: center;
+            /* Center align items */
+            margin-top: 10px;
+            /* Space between button and arrow */
+        }
+
+        .line {
+            width: 2px;
+            /* Width of the line */
+            height: 40px;
+            /* Height of the line */
+            background-color: white;
+            /* Line color */
+        }
+
+        .arrow {
+            font-size: 15px;
+            /* Adjust arrow size */
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-
-    <!-- Start Preloader 
-    ============================================= -->
-    
-    <!-- End Preloader -->
-
-    <!-- Start Header Top 
-    ============================================= -->
-    
-    <!-- End Header Top -->
-
     <!-- Header 
     ============================================= -->
     <header>
         <!-- Start Navigation -->
-        <nav class="navbar mobile-sidenav navbar-style-one navbar-sticky navbar-default validnavs white navbar-fixed no-background">
+        <nav
+            class="navbar mobile-sidenav navbar-style-one navbar-sticky navbar-default validnavs white navbar-fixed no-background">
 
             <div class="container">
                 <div class="row align-center">
@@ -217,18 +223,20 @@
                         <div class="collapse navbar-collapse" id="navbar-menu">
 
                             <img src="assets/img/logo.png" alt="Logo">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#navbar-menu">
                                 <i class="fa fa-times"></i>
                             </button>
-                            
-                            <ul class="nav nav-pills navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+
+                            <ul class="nav nav-pills navbar-nav navbar-center" data-in="fadeInDown"
+                                data-out="fadeOutUp">
                                 <li><a href="#" class="custom-nav-item">Home</a></li>
                                 <li><a href="#" class="custom-nav-item">AboutUs</a></li>
                                 <li><a href="#" class="custom-nav-item">Services</a></li>
                                 <li><a href="#" class="custom-nav-item">Pricing</a></li>
                             </ul>
                         </div>
-                        
+
                     </div>
                     <div class="col-6">
                         <div class="d-flex">
@@ -241,73 +249,59 @@
                     </div>
                     <!-- /.navbar-collapse -->
 
-                </div>         
+                </div>
                 <!-- Main Nav -->
 
                 <!-- Overlay screen for menu -->
                 <div class="overlay-screen"></div>
                 <!-- End Overlay screen for menu -->
-            </div>   
-            
+            </div>
+
         </nav>
-       
+
         <!-- End Navigation -->
     </header>
-    
-      <div class="vertical-button">
+
+    <div class="vertical-button">
         <button>
-          <div class="arrow-container">
-          <div class="line"></div>
-          <span class="arrow">&#x25BC;</span> <!-- Down arrow -->
-        </div>
+            <div class="arrow-container">
+                <div class="line"></div>
+                <span class="arrow">&#x25BC;</span> <!-- Down arrow -->
+            </div>
         </button>
-        
-      </div>
+
+    </div>
     <!-- End Header -->
 
     <!-- Start Banner Area 
     ============================================= -->
     <div class="h-100">
         <div style="position:absolute;z-index: 1111;top:25%;left: 2%;">
-            <!-- <section class="wrapper-section">
-              <h1>1</h1>
-            </section>
-            <section class="wrapper-section">
-              <h1>2</h1>
-            </section>
-            <section class="wrapper-section">
-              <h1>3</h1>
-            </section>
-            <section class="wrapper-section">
-              <h1>4</h1>
-            </section>
-            <section class="wrapper-section">
-              <h1>5</h1>
-            </section> -->
-          
-               <div class="scrollbar">
+            <div class="scrollbar">
                 <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
                 <div class="dot bg-white" style="top: 33%;"><span class="dot-text">About Us</span></div>
                 <div class="dot bg-white" style="top: 66%;"><span class="dot-text">Set Specific Goals</span></div>
                 <div class="dot bg-white" style="top: 100%;"><span class="dot-text">Active Financial Goals</span></div>
-              </div>
-          </div>
-          <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light" id="home">
+            </div>
+        </div>
+        <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light"
+            id="home">
             <!-- Slider main container -->
-            
+
             <div class="banner-fade">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-    
+
                     <!-- Single Item -->
                     <div class="swiper-slide banner-style-one">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/ban-1.jpg);"></div>
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/ban-1.jpg);">
+                        </div>
                         <div class="container">
                             <div class="row align-center">
                                 <div class="col-6" style="margin-top:15rem">
                                     <div class="content">
                                         <h2><strong>Achieve your</strong> Financial Goals</h2>
-                                        
+
                                     </div>
                                 </div>
                                 <!-- <div class="col-6">
@@ -322,14 +316,15 @@
                             </div>
                         </div>
                         <!-- Shape -->
-                        
+
                         <!-- End Shape -->
                     </div>
                     <!-- End Single Item -->
-    
+
                     <!-- Single Item -->
                     <div class="swiper-slide banner-style-one">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/banner-2.jpg);"></div>
+                        <div class="banner-thumb bg-cover shadow dark"
+                            style="background: url(assets/img/banner-2.jpg);"></div>
                         <div class="container">
                             <div class="row align-center">
                                 <div class="col-xl-7 offset-xl-5">
@@ -337,7 +332,8 @@
                                         <h4>Coaching & Consulting</h4>
                                         <h2><strong>Strategies for</strong> Enduring Success</h2>
                                         <div class="button mt-40">
-                                            <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a>
+                                            <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i>
+                                                <span>Our Services</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -350,150 +346,160 @@
                         <!-- End Shape -->
                     </div>
                     <!-- End Single Item -->
-    
+
                 </div>
-    
+
                 <!-- Pagination -->
                 <div class="swiper-pagination"></div>
-    
-            </div>  
-        </div>
-        </div>
 
-    
-    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding bg-white">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-top bg-white container-fluid">
+        <div style="position:absolute;z-index: 1111;top:33%;left:100px">
+            <div class="scrollbar" style="left:-30px !important">
+                <div class="dot active active" style="top: 0%;color: #000 !important;"><span
+                        class="dot-text-2">Active</span></div>
+                <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span
+                        class="dot-text-2">About Us</span></div>
+                <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span
+                        class="dot-text-2">Set Specific Goals</span></div>
+                <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span
+                        class="dot-text-2">Active Financial Goals</span></div>
+            </div>
+        </div>
         <div class="container">
-            <div style="position:absolute;z-index: 1111;top:19%;left:70px">
-                <!-- <section class="wrapper-section">
-                  <h1>1</h1>
-                </section>
-                <section class="wrapper-section">
-                  <h1>2</h1>
-                </section>
-                <section class="wrapper-section">
-                  <h1>3</h1>
-                </section>
-                <section class="wrapper-section">
-                  <h1>4</h1>
-                </section>
-                <section class="wrapper-section">
-                  <h1>5</h1>
-                </section> -->
-              
-                   <div class="scrollbar" style="left:-30px !important">
-                    <div class="dot active active" style="top: 0%;color: #000 !important;"><span class="dot-text-2">Active</span></div>
-                    <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span class="dot-text-2">About Us</span></div>
-                    <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span class="dot-text-2">Set Specific Goals</span></div>
-                    <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span class="dot-text-2">Active Financial Goals</span></div>
-                  </div>
-              </div>
             <div class="row align-center default-padding-bottom">
-      
-                <div class="about-style-two col-lg-4 offset-lg-2">
+
+                <div class="about-style-two col-lg-5 order-2 order-lg-1">
                     <h2 class="title text-dark"> Invest in your future</h2>
                     <p>
-                        With over a decade of proven excellence, AIX Investment Group has earned its reputation as a trusted leader in the financial industry. Our collaboration with industry top experts allows us to provide diverse investment solutions through our several regulated entities.                
+                        With over a decade of proven excellence, Cresco Investment Group has earned its reputation as a
+                        trusted leader in the financial industry. Our collaboration with industry top experts allows us
+                        to provide diverse investment solutions through our several regulated entities.
                     </p>
                     <a href="#" class="read-more-btn">
-                      <span>Read More</span>
+                        <span>Read More</span>
                     </a>
                 </div>
-      
-                <div class="col-lg-6 about-style-two">
-                  <div class="thumb">
-                    <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
-                  </div>
+
+                <div class="col-lg-6 offset-lg-1 about-style-two order-1 order-lg-2">
+                    <div class="thumb">
+                        <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
+                    </div>
                 </div>
-      
-            </div>
-            
-            <div class="row align-center">
-                <div style="position:absolute;z-index: 1111;top:55%;left:70px">
-                    <!-- <section class="wrapper-section">
-                      <h1>1</h1>
-                    </section>
-                    <section class="wrapper-section">
-                      <h1>2</h1>
-                    </section>
-                    <section class="wrapper-section">
-                      <h1>3</h1>
-                    </section>
-                    <section class="wrapper-section">
-                      <h1>4</h1>
-                    </section>
-                    <section class="wrapper-section">
-                      <h1>5</h1>
-                    </section> -->
-                  
-                       <div class="scrollbar" style="left:-30px !important">
-                        <div class="dot" style="top: 0%;color: #000 !important;"><span class="dot-text-2">Active</span></div>
-                        <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span class="dot-text-2">About Us</span></div>
-                        <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span class="dot-text-2">Set Specific Goals</span></div>
-                        <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span class="dot-text-2">Active Financial Goals</span></div>
-                      </div>
-                  </div>
-                <div class="about-style-two col-lg-4 offset-lg-2">
-                    <h2 class="title text-dark"> Empowering Tomorrow, <br> Together</h2>
-                    <p>
-                        We Are The Future, the dynamic partnership vertical of AIX Investment Group, unites visionaries, innovators, and changemakers to shape a better tomorrow. Through impactful partnerships, we amplify our collective impact to tackle global challenges, foster sustainable development, and empower communities worldwide. Together, we achieve dreams and build a brighter future.              
-                    </p>                
-                </div>
-      
-                <div class="col-lg-6 about-style-two">
-                  <div class="thumb">
-                    <img src="assets/img/what-we-doimg.jpg" alt="Image Not Found">
-                  </div>
-                </div>
-      
+
             </div>
         </div>
-      </div>
-      <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding bg-white" style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important;">
+    </div>
+
+    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-bottom bg-white container-fluid">
+        <div style="position:absolute;z-index: 1111;top:18%;left:100px">
+            <div class="scrollbar" style="left:-30px !important">
+                <div class="dot active active" style="top: 0%;color: #000 !important;"><span
+                        class="dot-text-2">Active</span></div>
+                <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span
+                        class="dot-text-2">About Us</span></div>
+                <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span
+                        class="dot-text-2">Set Specific Goals</span></div>
+                <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span
+                        class="dot-text-2">Active Financial Goals</span></div>
+            </div>
+        </div>
         <div class="container">
-            <div class="row align-center default-padding-bottom">
-    
-                <div class="col-lg-4 about-style-two">
-                    <div class="card bg-secondary p-3 pb-5" style="border-radius: 1rem !important; background: #e5e5e5 !important; border-color: #e5e5e5e5 !important;">
-                        <div class="card-body pb-5">
-                          <h1 class="card-title mb-5" style="line-height: 1 !important; margin-bottom: 5rem !important;">Budget <br> Planning</h1>
-                          <h1 class="card-title mb-0">$1,89K </h1>
-                          <span class="fs-10 text-secondary">This month amount</span>
-                          <h1 class="card-title mb-0 mt-4">$9,89K </h1>
-                          <span class="fs-10 text-secondary">Target amount you want to save</span>
+            <div class="row align-center">
+                <div class="about-style-two col-lg-6">
+                    <h2 class="title text-dark"> Empowering Tomorrow, <br> Together</h2>
+                    <p>
+                        We Are The Future, the dynamic partnership vertical of Cresco Investment Group, unites visionaries,
+                        innovators, and changemakers to shape a better tomorrow. Through impactful partnerships, we
+                        amplify our collective impact to tackle global challenges, foster sustainable development, and
+                        empower communities worldwide. Together, we achieve dreams and build a brighter future.
+                    </p>
+                </div>
+      
+                <div class="col-lg-4 offset-lg-2 about-style-two">
+                    <div class="card bg-dark p-1 card-3" style="border-radius: 1rem !important;">
+                        <div class="card-body">
+                            <h1 class="card-title mb-5 text-white"
+                                style="line-height: 1 !important; margin-bottom: 5rem !important;">Saved <br> Amount
+                            </h1>
+                            <h1 class="card-title mb-0 text-white">$1,89K </h1>
+                            <span class="fs-10 text-secondary">This month amount</span>
+                            <h1 class="card-title mb-0 mt-4 text-white">$9,89K </h1>
+                            <span class="fs-10 text-secondary">Saving Amount</span>
+                            <div class="card-footer mt-5 p-3" style="background: #000 !important; border-radius: 8px !important;">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <span style="width: 30px;"><img src="assets/img/check.svg" alt=""></span>
+                                    <span class="text-white" style="width: 100%; line-height: 1 !important; font-size: 13px !important;">You have successfully saved the targeted amount you wanted</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-      
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding bg-white"
+        style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important;">
+        <div class="container">
+            <div class="row align-center default-padding-bottom">
+
+                <div class="col-lg-4 about-style-two">
+                    <div class="card bg-secondary p-3 pb-5"
+                        style="border-radius: 1rem !important; background: #e5e5e5 !important; border-color: #e5e5e5e5 !important;">
+                        <div class="card-body pb-5">
+                            <h1 class="card-title mb-5"
+                                style="line-height: 1 !important; margin-bottom: 5rem !important;">Budget <br> Planning
+                            </h1>
+                            <h1 class="card-title mb-0">$1,89K </h1>
+                            <span class="fs-10 text-secondary">This month amount</span>
+                            <h1 class="card-title mb-0 mt-4">$9,89K </h1>
+                            <span class="fs-10 text-secondary">Target amount you want to save</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="about-style-two col-lg-5 offset-lg-3">
                     <h2 class="title text-dark">Create Your Own <br> Budget</h2>
                     <p>
-                        Saving money is key to achieving your financial goals. Set up automatic transfers to a savings account each month to make it easier to save consistently.                
+                        Saving money is key to achieving your financial goals. Set up automatic transfers to a savings
+                        account each month to make it easier to save consistently.
                     </p>
                 </div>
-      
+
             </div>
             <div class="row align-center default-padding-top">
-      
+
                 <div class="about-style-two col-lg-5 order-2 order-lg-1">
                     <h2 class="title text-dark">Invest for your <br> Future</h2>
                     <p>
-                        Investing is a great way to build wealth over time. Consider opening a retirement account or investing in low-cost index funds to help your money grow.                
-                    </p>                
+                        Investing is a great way to build wealth over time. Consider opening a retirement account or
+                        investing in low-cost index funds to help your money grow.
+                    </p>
                 </div>
-      
+
                 <div class="col-lg-4 offset-lg-3 about-style-two order-1 order-lg-2">
                     <div class="card bg-dark p-3 card-3" style="border-radius: 1rem !important;">
                         <div class="card-body">
-                          <h1 class="card-title text-white mb-5" style="line-height: 1 !important;">Invested <br> Amount</h1>
-                          <h1 class="card-title text-white mb-0">$1,89K </h1>
-                          <span class="fs-10 text-secondary">Invested Amount</span>
+                            <h1 class="card-title text-white mb-5" style="line-height: 1 !important;">Invested <br>
+                                Amount</h1>
+                            <h1 class="card-title text-white mb-0">$1,89K </h1>
+                            <span class="fs-10 text-secondary">Invested Amount</span>
                         </div>
                     </div>
                 </div>
-      
+
             </div>
         </div>
-      </div>
+    </div>
     <!-- End Faq -->
 
     <!-- Start Footer 
@@ -519,7 +525,7 @@
                             <div class="opening-hours">
                                 <h5>Opening Hours</h5>
                                 <ul>
-                                    <li> 
+                                    <li>
                                         <div class="working-day">Monday – Sunday:</div>
                                         <div class="marker"></div>
                                         <div class="working-hour">2pm – 2pm</div>
@@ -585,7 +591,7 @@
                         <div class="f-item newsletter">
                             <form action="#">
                                 <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> Subscribe</button>  
+                                <button type="submit"> Subscribe</button>
                             </form>
                         </div>
                         <ul class="footer-social">
@@ -642,7 +648,7 @@
 
     </footer>
     <!-- End Footer -->
-    
+
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -668,9 +674,9 @@
             // Highlight the active dot
             $('.dot').removeClass('active');
             $(`.dot:nth-child(${number})`).addClass('active');
-            });
+        });
 
-      </script>
+    </script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
@@ -691,7 +697,8 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/validnavs.js"></script>
     <script src="assets/js/main.js"></script>
-  
+
 
 </body>
+
 </html>
