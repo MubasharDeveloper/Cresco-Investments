@@ -54,30 +54,26 @@
         }
 
         .scrollbar {
-            position: absolute;
-            left: 20px;
-            top: 100%;
-            height: 200px;
-            /* Adjusted height for 5 dots */
-            width: 2px;
+            height: 200px !important;
+            width: 3px;
             border-radius: 2px;
             background: black;
         }
 
         .dot {
-            width: 6px;
-            height: 7px;
+            width: 11px;
+            height: 11px !important;
             border-radius: 50%;
             position: absolute;
-            left: -2px;
+            left: -4px;
             background: black;
             transform: translateY(-50%);
-            font-size: 10px;
+            font-size: 12px;
             white-space: nowrap;
         }
 
         .dot.active {
-            background: gray;
+            background: #fff;
             /* Highlight the active dot */
             color: #fff;
         }
@@ -127,8 +123,8 @@
 
         .dot-text {
             position: absolute;
-            top: -10px;
-            width: 85px;
+            top: -2px;
+            width: 88px;
             margin-left: 15px;
             white-space: break-spaces;
             line-height: 1;
@@ -137,7 +133,7 @@
         .dot-text-2 {
             position: absolute;
             top: 0px;
-            width: 85px;
+            width: 88px;
             margin-left: 15px;
             white-space: break-spaces;
             line-height: 1;
@@ -199,6 +195,23 @@
             font-size: 15px;
             /* Adjust arrow size */
         }
+
+        .news-section-top{
+            background-color: #000233 !important;    
+            padding: 0px 0px 20px 0px !important;
+        }
+
+        .news-section-bottom{
+            background-color: #171945 !important;    
+            padding: 0px 0px 20px 0px !important;
+        }
+
+        .news-section-top h4,
+        .news-section-bottom h4{
+            font-size: 18px !important;
+            padding: 43px 0px 8px;
+            color: #b2764a;
+        }
     </style>
 
 </head>
@@ -209,57 +222,44 @@
     ============================================= -->
     <header>
         <!-- Start Navigation -->
-        <nav
-            class="navbar mobile-sidenav navbar-style-one navbar-sticky navbar-default validnavs white navbar-fixed no-background">
+        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed dark on menu-center no-full sticked">
 
-            <div class="container">
-                <div class="row align-center">
+            <div class="custom-container d-flex align-items-center">            
+                
 
-                    <!-- Start Header Navigation -->
-                    <!-- End Header Navigation -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
 
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="col-xl-6 col-lg-9 col-md-10 col-sm-11 col-11 d-flex justify-content-start">
-                        <div class="collapse navbar-collapse" id="navbar-menu">
-
-                            <img src="assets/img/logo.png" alt="Logo">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#navbar-menu">
-                                <i class="fa fa-times"></i>
-                            </button>
-
-                            <ul class="nav nav-pills navbar-nav navbar-center" data-in="fadeInDown"
-                                data-out="fadeOutUp">
-                                <li><a href="#" class="custom-nav-item">Home</a></li>
-                                <li><a href="#" class="custom-nav-item">AboutUs</a></li>
-                                <li><a href="#" class="custom-nav-item">Services</a></li>
-                                <li><a href="#" class="custom-nav-item">Pricing</a></li>
-                            </ul>
-                        </div>
-
+                    <div class="collapse-header">
+                        <img src="assets/img/logo.png" alt="Logo">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                            <i class="fa fa-times"></i>
+                        </button>
                     </div>
-                    <div class="col-6">
-                        <div class="d-flex">
-                            <div>
-                                <span>Logo</span>
-                            </div>
-                        </div>
+                    
+                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#goals">Goals</a></li>
+                        <li><a href="#investment">Investment</a></li>
+                        <li><a href="#trading">Trading</a></li>
+                        <li><a href="#budget">Budget</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
 
-
-                    </div>
-                    <!-- /.navbar-collapse -->
-
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
                 </div>
-                <!-- Main Nav -->
+                <!-- End Header Navigation -->
 
-                <!-- Overlay screen for menu -->
-                <div class="overlay-screen"></div>
-                <!-- End Overlay screen for menu -->
-            </div>
-
+            </div>   
+            <!-- Overlay screen for menu -->
+            <div class="overlay-screen"></div>
+            <!-- End Overlay screen for menu -->
         </nav>
 
-        <!-- End Navigation -->
     </header>
 
     <div class="vertical-button">
@@ -275,15 +275,7 @@
 
     <!-- Start Banner Area 
     ============================================= -->
-    <div class="h-100">
-        <div style="position:absolute;z-index: 1111;top:25%;left: 2%;">
-            <div class="scrollbar">
-                <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
-                <div class="dot bg-white" style="top: 33%;"><span class="dot-text">About Us</span></div>
-                <div class="dot bg-white" style="top: 66%;"><span class="dot-text">Set Specific Goals</span></div>
-                <div class="dot bg-white" style="top: 100%;"><span class="dot-text">Active Financial Goals</span></div>
-            </div>
-        </div>
+    <div id="home" style="height: 100vh !important;">
         <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light"
             id="home">
             <!-- Slider main container -->
@@ -293,35 +285,29 @@
                 <div class="swiper-wrapper">
 
                     <!-- Single Item -->
-                    <div class="swiper-slide banner-style-one">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/ban-1.jpg);">
+                    <div class="swiper-slide banner-style-one" style="height: 100vh !important;">
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/ban-1.jpg); height: 100vh !important;">
                         </div>
-                        <div class="container">
-                            <div class="row align-center">
-                                <div class="col-6" style="margin-top:15rem">
-                                    <div class="content">
-                                        <h2><strong>Achieve your</strong> Financial Goals</h2>
-
-                                    </div>
-                                </div>
-                                <!-- <div class="col-6">
-                                    <div class="content">
-                                        <h4>Coaching & Consulting</h4>
-                                        <h2><strong>Strategies for</strong> Enduring Success</h2>
-                                        <div class="button mt-40">
-                                            <a class="btn-animation" href="#services"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a>
+                        <div class="custom-container">
+                            <div class="row">
+                                <div class="col-12 col-lg-2 d-none d-lg-block">
+                                    <div style="position:absolute !important; top: calc(50vh - 100px) !important;">
+                                        <div class="scrollbar position-relative" style="background: #fff !important; z-index: 9;">
+                                            <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
+                                            <div class="dot bg-white" style="top: 33%;"><span class="dot-text">Invest For Future</span></div>
+                                            <div class="dot bg-white" style="top: 66%;"><span class="dot-text">Set Specific Goals</span></div>
+                                            <div class="dot bg-white" style="top: 100%;"><span class="dot-text">Trading</span></div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+                                <div class="col-12 col-lg-10 d-flex align-items-end" style="padding-bottom: 12rem !important;">
+                                    <div class="content">
+                                        <h2><strong>Achieve your</strong> Financial Goals</h2>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Shape -->
-
-                        <!-- End Shape -->
                     </div>
-                    <!-- End Single Item -->
-
-                    <!-- Single Item -->
                     <div class="swiper-slide banner-style-one">
                         <div class="banner-thumb bg-cover shadow dark"
                             style="background: url(assets/img/banner-2.jpg);"></div>
@@ -357,26 +343,44 @@
     </div>
 
 
-
-
-
-    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-top bg-white container-fluid">
-        <div style="position:absolute;z-index: 1111;top:33%;left:100px">
-            <div class="scrollbar" style="left:-30px !important">
-                <div class="dot active active" style="top: 0%;color: #000 !important;"><span
-                        class="dot-text-2">Active</span></div>
-                <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span
-                        class="dot-text-2">About Us</span></div>
-                <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span
-                        class="dot-text-2">Set Specific Goals</span></div>
-                <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span
-                        class="dot-text-2">Active Financial Goals</span></div>
+    <!-- <section class="container-fluid px-0 mt-3">
+        <div class="news-section-top">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-2"><h4><em>Forex</em></h4></div>
+                    <div class="col-12 col-md-3 col-lg-10 overflow-hidden" style="padding: 30px 0px 8px;"><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDZAR%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDMXN%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDTRY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDINR%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDSGD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDPLN%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCNH%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDSEK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDTHB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDNOK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDHUF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDDKK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCZK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CAPITALCOM%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CAPITALCOM%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDTRY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDHKD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FOREXCOM%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FOREXCOM%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CAPITALCOM%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDMXN%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDZAR%22%7D%5D%2C%22showSymbolLogo%22%3Afalse%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22largeChartUrl%22%3A%22https%3A%2F%2Fin.tradingview.com%2Fwidget%2Fticker-tape%2Fforex%22%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A76%2C%22utm_source%22%3A%22www.aixinvestment.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22www.aixinvestment.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 44px; width: 100%;" data-origwidth="" data-origheight=""></iframe></div>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row align-center default-padding-bottom">
+        <div class="news-section-bottom">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-2"><h4><em>Commodities</em></h4></div>
+                    <div class="col-12 col-md-9 col-lg-10 overflow-hidden" style="padding: 30px 0px 8px;"><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3ANATURALGAS%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3AOIL_CRUDE%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22TVC%3ASILVER%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22TVC%3AGOLD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22TVC%3APLATINUM%22%7D%5D%2C%22showSymbolLogo%22%3Afalse%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A76%2C%22utm_source%22%3A%22www.aixinvestment.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22www.aixinvestment.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 44px; width: 100%;" data-origwidth="" data-origheight=""></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-                <div class="about-style-two col-lg-5 order-2 order-lg-1">
+
+    <div id="investment" class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-top bg-white container-fluid">
+        <div class="custom-container">
+            <div class="row align-center default-padding-bottom custom-card-1">
+                <div class="col-12 col-lg-2 d-none d-lg-block">
+                    <div style="position:relative;">
+                        <div class="scrollbar position-relative" style="">
+                            <div class="dot" style="top: 0%;color: #000 !important;background: black !important; "><span
+                                    class="dot-text-2">Active Financial Goals</span></div>
+                            <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span
+                                    class="dot-text-2">Invest For Future</span></div>
+                            <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span
+                                    class="dot-text-2">Set Specific Goals</span></div>
+                            <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span
+                                    class="dot-text-2">Trading</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-2 order-lg-1 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
                     <h2 class="title text-dark"> Invest in your future</h2>
                     <p>
                         With over a decade of proven excellence, Cresco Investment Group has earned its reputation as a
@@ -387,8 +391,7 @@
                         <span>Read More</span>
                     </a>
                 </div>
-
-                <div class="col-lg-6 offset-lg-1 about-style-two order-1 order-lg-2">
+                <div class="col-12 col-md-5 col-lg-4 order-1 order-lg-2 custom-card-img pb-4">
                     <div class="thumb">
                         <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
                     </div>
@@ -398,32 +401,37 @@
         </div>
     </div>
 
-    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-bottom bg-white container-fluid">
-        <div style="position:absolute;z-index: 1111;top:18%;left:100px">
-            <div class="scrollbar" style="left:-30px !important">
-                <div class="dot active active" style="top: 0%;color: #000 !important;"><span
-                        class="dot-text-2">Active</span></div>
-                <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span
-                        class="dot-text-2">About Us</span></div>
-                <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span
-                        class="dot-text-2">Set Specific Goals</span></div>
-                <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span
-                        class="dot-text-2">Active Financial Goals</span></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row align-center">
-                <div class="about-style-two col-lg-6">
+    <div class="about-style-two-area overflow-hidden bg-contain bg-gray bg-white container-fluid">
+        <div class="custom-container">
+            <div class="row align-center default-padding-bottom custom-card-1">
+                <div class="col-12 col-md-3 col-lg-2 d-none d-lg-block">
+                    <div style="position:relative;">
+                        <div class="scrollbar position-relative" style="">
+                            <div class="dot active active" style="top: 0%;color: #000 !important;"><span
+                                    class="dot-text-2">Active Financial Goals</span></div>
+                            <div class="dot active" style="top: 33%;color: #000 !important;background: black !important;"><span
+                                    class="dot-text-2">Invest For Future</span></div>
+                            <div class="dot" style="top: 66%;color: #000 !important;background: black !important;"><span
+                                    class="dot-text-2">Set Specific Goals</span></div>
+                            <div class="dot" style="top: 100%;color: #000 !important;background: black !important;"><span
+                                    class="dot-text-2">Trading</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 order-2 order-lg-1 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
                     <h2 class="title text-dark"> Empowering Tomorrow, <br> Together</h2>
                     <p>
-                        We Are The Future, the dynamic partnership vertical of Cresco Investment Group, unites visionaries,
+                        We Are The Future, the dynamic partnership vertical of Cresco Investment Group, unites
+                        visionaries,
                         innovators, and changemakers to shape a better tomorrow. Through impactful partnerships, we
                         amplify our collective impact to tackle global challenges, foster sustainable development, and
                         empower communities worldwide. Together, we achieve dreams and build a brighter future.
                     </p>
+                    <a href="#" class="read-more-btn">
+                        <span>Read More</span>
+                    </a>
                 </div>
-      
-                <div class="col-lg-4 offset-lg-2 about-style-two">
+                <div class="col-12 col-md-5 col-lg-4 order-1 order-lg-2 custom-card-inner pb-4">
                     <div class="card bg-dark p-1 card-3" style="border-radius: 1rem !important;">
                         <div class="card-body">
                             <h1 class="card-title mb-5 text-white"
@@ -433,10 +441,13 @@
                             <span class="fs-10 text-secondary">This month amount</span>
                             <h1 class="card-title mb-0 mt-4 text-white">$9,89K </h1>
                             <span class="fs-10 text-secondary">Saving Amount</span>
-                            <div class="card-footer mt-5 p-3" style="background: #000 !important; border-radius: 8px !important;">
+                            <div class="card-footer mt-5 p-3"
+                                style="background: #000 !important; border-radius: 8px !important;">
                                 <div class="d-flex gap-3 align-items-center">
                                     <span style="width: 30px;"><img src="assets/img/check.svg" alt=""></span>
-                                    <span class="text-white" style="width: 100%; line-height: 1 !important; font-size: 13px !important;">You have successfully saved the targeted amount you wanted</span>
+                                    <span class="text-white"
+                                        style="width: 100%; line-height: 1 !important; font-size: 13px !important;">You
+                                        have successfully saved the targeted amount you wanted</span>
                                 </div>
                             </div>
                         </div>
@@ -447,12 +458,34 @@
     </div>
 
 
-    <div class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding bg-white"
-        style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important;">
-        <div class="container">
-            <div class="row align-center default-padding-bottom">
+    <section class="container-fluid px-0 mt-3" id="trading">
+        <div class="news-section-top">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-2"><h4><em>Forex</em></h4></div>
+                    <div class="col-12 col-md-9 col-lg-10 overflow-hidden trade-strip" style=""><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDZAR%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDMXN%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDTRY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDINR%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDSGD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDPLN%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCNH%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDSEK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDTHB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDNOK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDHUF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDDKK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDCZK%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CAPITALCOM%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CAPITALCOM%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDTRY%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22OANDA%3AUSDHKD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FOREXCOM%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FOREXCOM%3AUSDRUB%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CAPITALCOM%3AUSDCHF%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3AUSDCAD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDMXN%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22FX%3AUSDZAR%22%7D%5D%2C%22showSymbolLogo%22%3Afalse%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22largeChartUrl%22%3A%22https%3A%2F%2Fin.tradingview.com%2Fwidget%2Fticker-tape%2Fforex%22%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A76%2C%22utm_source%22%3A%22www.aixinvestment.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22www.aixinvestment.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 44px; width: 100%;" data-origwidth="" data-origheight=""></iframe></div>
+                </div>
+            </div>
+        </div>
+        <div class="news-section-bottom">
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-12 col-md-3 col-lg-2"><h4><em>Commodities</em></h4></div>
+                    <div class="col-12 col-md-9 col-lg-10 overflow-hidden trade-strip" style=""><iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/ticker-tape/?locale=en#%7B%22symbols%22%3A%5B%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3ANATURALGAS%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22CURRENCYCOM%3AOIL_CRUDE%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22TVC%3ASILVER%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22TVC%3AGOLD%22%7D%2C%7B%22description%22%3A%22%22%2C%22proName%22%3A%22TVC%3APLATINUM%22%7D%5D%2C%22showSymbolLogo%22%3Afalse%2C%22colorTheme%22%3A%22dark%22%2C%22isTransparent%22%3Atrue%2C%22displayMode%22%3A%22adaptive%22%2C%22width%22%3A%22100%25%22%2C%22height%22%3A76%2C%22utm_source%22%3A%22www.aixinvestment.com%22%2C%22utm_medium%22%3A%22widget_new%22%2C%22utm_campaign%22%3A%22ticker-tape%22%2C%22page-uri%22%3A%22www.aixinvestment.com%2F%22%7D" title="ticker tape TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 44px; width: 100%;" data-origwidth="" data-origheight=""></iframe></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-lg-4 about-style-two">
+
+    <div id="budget" class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-top default-padding-bottom bg-white"
+        style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important;">
+        <div class="custom-container">
+            <div class="row align-center default-padding-bottom custom-card-2">
+
+                <div class="col-12 col-lg-2"></div>
+
+                <div class="col-12 col-md-5 col-lg-4 about-style-two custom-card-inner pb-4">
                     <div class="card bg-secondary p-3 pb-5"
                         style="border-radius: 1rem !important; background: #e5e5e5 !important; border-color: #e5e5e5e5 !important;">
                         <div class="card-body pb-5">
@@ -467,7 +500,7 @@
                     </div>
                 </div>
 
-                <div class="about-style-two col-lg-5 offset-lg-3">
+                <div class="about-style-two col-12 col-md-7 col-lg-5 offset-lg-1 custom-card-content d-flex flex-column justify-content-center">
                     <h2 class="title text-dark">Create Your Own <br> Budget</h2>
                     <p>
                         Saving money is key to achieving your financial goals. Set up automatic transfers to a savings
@@ -476,9 +509,11 @@
                 </div>
 
             </div>
-            <div class="row align-center default-padding-top">
+            <div class="row align-center default-padding-top custom-card-3">
 
-                <div class="about-style-two col-lg-5 order-2 order-lg-1">
+                <div class="col-12 col-lg-2"></div>
+
+                <div class="about-style-two col-12 col-md-7 col-lg-5 order-2 order-md-1 custom-card-content d-flex flex-column justify-content-center">
                     <h2 class="title text-dark">Invest for your <br> Future</h2>
                     <p>
                         Investing is a great way to build wealth over time. Consider opening a retirement account or
@@ -486,7 +521,7 @@
                     </p>
                 </div>
 
-                <div class="col-lg-4 offset-lg-3 about-style-two order-1 order-lg-2">
+                <div class="col-12 col-md-5 col-lg-4 offset-lg-1 about-style-two order-1 order-md-2 custom-card-inner pb-4">
                     <div class="card bg-dark p-3 card-3" style="border-radius: 1rem !important;">
                         <div class="card-body">
                             <h1 class="card-title text-white mb-5" style="line-height: 1 !important;">Invested <br>
