@@ -1418,7 +1418,7 @@ nav.navbar.validnavs.brand-center {
 
 	nav.navbar.validnavs.navbar-fixed {
 		position: absolute;
-		background: transparent;
+		background: #111111;
 	}
 
 	nav.navbar.validnavs.navbar-transparent .attr-nav {
