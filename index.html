@@ -401,6 +401,46 @@
                 font-size: 58px !important;
             }
         }
+
+        @media(max-width: 1024px){
+            #home{
+                margin-top: 88px !important;
+            }
+        }
+
+        #goals{
+            height: 900px !important;
+        }
+
+        @media(max-width: 850px){
+            #goals{
+                height: 800px !important;
+            } 
+        }
+
+        @media(max-width: 660px){
+            #goals{
+                height: 750px !important;
+            }
+        }
+
+        @media(max-width: 450px){
+            #goals{
+                height: 650px !important;
+            }
+        }
+
+        @media(max-width: 400px){
+            #goals{
+                height: 585px !important;
+            }
+        }
+
+        @media(max-width: 350px){
+            #goals{
+                height: 535px !important;
+            }
+        }
     </style>
 
 </head>
@@ -451,22 +491,20 @@
 
     </header>
 
-    <div class="vertical-button">
+    <!-- <div class="vertical-button">
         <button>
             <div class="arrow-container">
                 <div class="line"></div>
-                <span class="arrow">&#x25BC;</span> <!-- Down arrow -->
+                <span class="arrow">&#x25BC;</span>
             </div>
         </button>
-
-    </div>
+    </div> -->
     <!-- End Header -->
 
     <!-- Start Banner Area 
     ============================================= -->
-    <div id="home" style="height: 100vh !important;">
-        <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light"
-            id="home">
+    <div id="home" style="aspect-ratio: 16/9 !important;">
+        <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light">
             <!-- Slider main container -->
 
             <div class="banner-fade">
@@ -474,13 +512,13 @@
                 <div class="swiper-wrapper">
 
                     <!-- Single Item -->
-                    <div class="swiper-slide banner-style-one" style="height: 100vh !important;">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/ban-1.jpg); height: 100vh !important;">
+                    <div class="swiper-slide banner-style-one" style="aspect-ratio: 16/9 !important;">
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/Background-image.jpg); aspect-ratio: 16/9 !important;">
                         </div>
                         <div class="custom-container">
                             <div class="row">
                                 <div class="col-12 col-lg-2 d-none d-lg-block">
-                                    <div style="position:absolute !important; top: calc(50vh - 100px) !important;">
+                                    <div style="position:absolute !important; top: calc(50% - 100px) !important;">
                                         <div class="scrollbar position-relative" style="background: #fff !important; z-index: 9;">
                                             <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
                                             <div class="dot bg-white" style="top: 33%;"><span class="dot-text">Invest For Future</span></div>
@@ -489,33 +527,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-10 d-flex align-items-end" style="padding-bottom: 12rem !important;">
+                                <!-- <div class="col-12 col-lg-10 d-flex align-items-end" style="padding-bottom: 12rem !important;">
                                     <div class="content">
                                         <h2><strong>Achieve your</strong> Financial Goals</h2>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide banner-style-one" style="height: 100vh !important;">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(assets/img/ban-1.jpg); height: 100vh !important;"></div>
-                        <div class="custom-container">
-                            <div class="row">
-                                <div class="col-12 col-lg-2 d-none d-lg-block">
-                                    <div style="position:absolute !important; top: calc(50vh - 100px) !important;">
-                                        <div class="scrollbar position-relative" style="background: #fff !important; z-index: 9;">
-                                            <div class="dot active" style="top: 0%;"><span class="dot-text">Active Financial Goals</span></div>
-                                            <div class="dot bg-white" style="top: 33%;"><span class="dot-text">Invest For Future</span></div>
-                                            <div class="dot bg-white" style="top: 66%;"><span class="dot-text">Set Specific Goals</span></div>
-                                            <div class="dot bg-white" style="top: 100%;"><span class="dot-text">Trading</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-lg-10 d-flex align-items-end" style="padding-bottom: 12rem !important;">
-                                    <div class="content">
-                                        <h2><strong>Achieve your</strong> Financial Goals</h2>
-                                    </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -524,14 +540,14 @@
                 </div>
 
                 <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-pagination"></div> -->
 
             </div>
         </div>
     </div>
 
 
-    <section style="height: 900px !important;" id="goals">
+    <section style="" id="goals">
         <div class="custom-container d-none d-lg-block">
             <div class="position-absolute">
                 <div class="nav-section-absolute" style="position:absolute !important; top: calc(50vh - 100px) !important;">
