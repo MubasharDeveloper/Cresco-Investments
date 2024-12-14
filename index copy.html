@@ -412,13 +412,11 @@
         }
 
         #home {
-            padding-top: 88px !important;
-            background: #000;
+            margin-top: 88px !important;
         }
 
         #goals {
-            height: 990px !important;
-            /* margin-bottom: 70px !important; */
+            height: 900px !important;
         }
 
         @media(max-width: 850px) {
@@ -476,7 +474,7 @@
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#goals">Goals</a></li>
-                        <li><a href="#about-sresco-scroll">About</a></li>
+                        <li><a href="#investment">Investment</a></li>
                         <li><a href="#trading">Trading</a></li>
                         <li><a href="#budget">Budget</a></li>
                     </ul>
@@ -499,7 +497,7 @@
 
     <!-- Start Banner Area 
     ============================================= -->
-    <section id="home" style="">
+    <div id="home" style="aspect-ratio: 16/9 !important;">
         <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light">
             <div class="banner-fade">
                 <div class="swiper-wrapper">
@@ -511,13 +509,13 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="home-2">
+    <section>
         <div class="container">
             <div class="card w-100" style="border: 2px solid; border-radius: 20px; margin: 120px 0px;">
                 <div class="card-body p-5" data-aos="fade-up" data-aos-duration="1600">
-                    <h2 style="font-weight: 600; text-align: center;"><em>Cresco</em></h2>
+                    <h2 style="font-weight: 600; text-align: center;">About Cresco</h2>
                     <p class="m-0 p-0" style="font-size: 22px; text-align: justify; line-height: 32px;">
                         At <strong><em>Cresco Investments</em></strong>, we specialise in creating tailored investment
                         solutions designed to help individuals, families, and institutions achieve their financial goals
@@ -531,6 +529,23 @@
     </section>
 
     <section id="goals">
+        <div class="custom-container d-none d-lg-block">
+            <div class="position-absolute">
+                <div class="nav-section-absolute"
+                    style="position:absolute !important; top: calc(50vh - 100px) !important;">
+                    <div class="scrollbar position-relative" style="background: #fff !important; z-index: 9;">
+                        <div class="dot active" style="top: 0%;"><span class="dot-text text-white">Active Financial
+                                Goals</span></div>
+                        <div class="dot bg-white" style="top: 33%;"><span class="dot-text text-white">Invest For
+                                Future</span></div>
+                        <div class="dot bg-white" style="top: 66%;"><span class="dot-text text-white">Set Specific
+                                Goals</span></div>
+                        <div class="dot bg-white" style="top: 100%;"><span class="dot-text text-white">Trading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row h-100" style="max-width: 100vw !important">
             <div class="col-12 col-lg-6 d-none d-lg-block h-100 px-0 bg-dark position-relative">
                 <h1 class="sec-hero-heading text-white pb-5 d-flex align-items-end justify-content-center ms-5 h-100"
@@ -588,217 +603,101 @@
         </div>
     </section>
 
-    <div class="scrolly-div position-relative">
+    <section class="scrolly-div position-relative">
         <!-- Start Nav Section -->
         <div id="navbar-scroll" class="navbar-scroll">
-            <div class="custom-container">
-                <div class="row">
-                    <div class="col-lg-2 d-none d-lg-block">
-                        <ul class="nav-menu-scroll">
-                            <li>
-                                <a data-scroll="about-sresco-scroll" href="#about-sresco-scroll"
-                                    class="dot-scroll active">
-                                    <span>About <em>Sresco</em></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="Opportunities-scroll" href="#Opportunities-scroll" class="dot-scroll">
-                                    <span>Opportunities</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="Why-Choose-Cresco-scroll" href="#Why-Choose-Cresco-scroll"
-                                    class="dot-scroll">
-                                    <span>Why Choose <em>Cresco?</em></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a data-scroll="Our-Commitment-scroll" href="#Our-Commitment-scroll" class="dot-scroll">
-                                    <span>Our Commitment</span>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a data-scroll="contact-scroll" href="#contact-scroll" class="dot-scroll">
-                                    <span>Contact</span>
-                                </a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <ul class="nav-menu-scroll">
+                <li>
+                    <a data-scroll="home-scroll" href="#home-scroll" class="dot-scroll active">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="about-scroll" href="#about-scroll" class="dot-scroll">
+                        <span>About me</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="services-scroll" href="#services-scroll" class="dot-scroll">
+                        <span>Services</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="test-scroll" href="#test-scroll" class="dot-scroll">
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+                <li>
+                    <a data-scroll="contact-scroll" href="#contact-scroll" class="dot-scroll">
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
         </div>
         <!-- End Nav Section -->
 
         <!-- Start Home Section -->
-        <section id="about-sresco-scroll" class="about-style-two-area container-fluid section-scroll" >
-            <div class="custom-container">
-                <div class="row align-center custom-card-1">
-                    <div class="col-12 col-lg-2 d-none d-lg-block"></div>
-                    <div
-                        class="col-12 col-md-7 col-lg-6 order-2 order-lg-1 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
-                        <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">About <em>Cresco</em></h2>
-                        <p>
-                            <em>Cresco</em> Investments is a full-service asset and investment management company
-                            committed to
-                            providing exceptional results and unparalleled client experiences. With decades of
-                            collective expertise in financial markets, real estate, private equity, and wealth advisory,
-                            we serve as a trusted partner for high-net-worth individuals, family offices, and
-                            institutional investors worldwide.
-                            <br><br>
-                            Our approach is guided by three core principles:
-                        <ul type="disc">
-                            <li class="scroll-ul">
-                                <span>
-                                    <strong>Security:</strong> Capital preservation is at the heart of our strategy,
-                                    ensuring that all investments are carefully vetted and risk-managed.
-                                </span>
-                            </li>
-                            <li class="scroll-ul">
-                                <span>
-                                    <strong>Performance:</strong> We seek to deliver consistent and superior returns
-                                    through disciplined research and market expertise.
-                                </span>
-                            </li>
-                            <li class="scroll-ul">
-                                <span>
-                                    <strong>Transparency:</strong> Clear communication and robust reporting are integral
-                                    to building trust with our clients
-                                </span>
-                            </li>
-                        </ul>
-
-                        </p>
+        <section id="home-scroll" class="section-scroll">
+            <div class="container-scroll">
+                <div class="content-wrapper-scroll text-center-scroll">
+                    <div class="content-scroll">
+                        <h1>Hello, I'm Ahmed Beheiry <br />Front-End Developer</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Inventore odit ipsam expedita dolorem.<br /> Distinctio, aliquid
+                            minima voluptatem saepe.</p>
+                        <button>Read More</button>
                     </div>
-                    <div class="col-12 col-md-5 col-lg-4 order-1 order-lg-2 custom-card-img pb-4">
-                        <div class="thumb thumb-img">
-                            <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </section>
         <!-- End Home Section -->
-        
+
         <!-- Start About Me Section -->
-        <section id="Opportunities-scroll"
-            class="about-style-two-area container-fluid section-scroll">
-            <div class="custom-container">
-                <div class="row align-center custom-card-1">
-                    <div class="col-12 col-lg-2 d-none d-lg-block"></div>
-                    <div class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
-                        <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">Opportunities</h2>
-                        <div class="row g-3 mt-3 justify-content-center text-center">
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Holistic Wealth Management</h3>
-                                        <p class="card-text">
-                                            From portfolio creation to ongoing management, we provide bespoke solutions
-                                            that align with your financial objectives. Whether it’s wealth preservation
-                                            or growth, we craft strategies to suit your unique needs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Real Estate Investment </h3>
-                                        <p class="card-text">
-                                            Our expertise in real estate spans residential, commercial, and industrial
-                                            assets, including high-yield labour accommodations, luxury developments, and
-                                            emerging market projects. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Fixed-Income Investments</h3>
-                                        <p class="card-text">
-                                            We offer secure, asset-backed fixed-income opportunities with predictable
-                                            returns, designed for those seeking stability in volatile markets. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Alternative Investments</h3>
-                                        <p class="card-text">
-                                            Diversify your portfolio with unique opportunities in private equity,
-                                            infrastructure, venture capital, litigation funding and specialised
-                                            financial instruments. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Institutional Solutions</h3>
-                                        <p class="card-text">
-                                            For family offices and institutional investors, we provide tailored advisory
-                                            services, large-scale asset structuring, and comprehensive reporting to
-                                            ensure operational efficiency and strategic alignment. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section id="about-scroll">
+            <div class="container-scroll text-center-scroll">
+                <h2>Competently communicate cross-media human capital.</h2>
+                <p>Synergistically implement end-to-end vortals after top-line
+                    meta-services. Completely productivate enterprise bandwidth
+                    rather.</p>
+                <img src="http://placehold.it/700x400/346df1/fff?text=Ahmed+Beheiry" alt />
             </div>
         </section>
         <!-- End About Me Section -->
 
         <!-- Start Services Section -->
-        <section id="Why-Choose-Cresco-scroll"
-            class="about-style-two-area container-fluid section-scroll">
-            <div class="custom-container">
-                <div class="row align-center custom-card-1">
-                    <div class="col-12 col-lg-2 d-none d-lg-block"></div>
-                    <div class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
-                        <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">Why Choose <em>Cresco?</em></h2>
-                        <div class="row g-3 mt-3 justify-content-center text-center">
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Expertise Across Asset Classes</h3>
-                                        <p class="card-text">
-                                            With a multidisciplinary team of experts, we excel at identifying and managing opportunities across diverse sectors, ensuring a well-balanced and profitable portfolio.
-                                        </p>
-                                    </div>
-                                </div>
+        <section id="services-scroll" class="section-scroll">
+            <div class="container-scroll">
+                <div class="content-wrapper-scroll text-center-scroll">
+                    <div class="content-scroll">
+                        <h2>My Services</h2>
+                        <p>compelling channels whereas user-centric e-services.
+                            Phosfluorescently productivate.</p>
+                        <div class="services-scroll">
+                            <div class="service-scroll text-left-scroll">
+                                <h4>Service No. (1)</h4>
+                                <p>Proactively integrate front-end infomediaries before
+                                    cooperative leadership skills. Progressively repurpose
+                                    value-added leadership skills with interactive leadership.
+                                    Progressively.</p>
                             </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Global Reach, Local Expertise</h3>
-                                        <p class="card-text">
-                                            Our network spans key markets globally, giving us insights into both established and emerging opportunities while maintaining a deep understanding of local dynamics.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="service-scroll text-right-scroll">
+                                <h4>Service No. (2)</h4>
+                                <p>Continually extend sustainable e-commerce before reliable
+                                    metrics. Efficiently expedite low-risk high-yield catalysts
+                                    for change via error-free value.</p>
                             </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Innovative Solutions</h3>
-                                        <p class="card-text">
-                                            Leveraging technology and pioneering research, we craft innovative strategies to maximise returns and minimise risk.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="service-scroll text-left-scroll">
+                                <h4>Service No. (3)</h4>
+                                <p>Phosfluorescently syndicate progressive content without
+                                    principle-centered content. Seamlessly restore leading-edge
+                                    web services via cooperative technology. Authoritatively
+                                    maximize.</p>
                             </div>
-                            <div class="col-6 px-2">
-                                <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Personalised Service</h3>
-                                        <p class="card-text">
-                                            Every client is unique, and so are our solutions. We pride ourselves on providing tailored advice and hands-on service for every investment journey.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="service-scroll text-right-scroll">
+                                <h4>Service No. (4)</h4>
+                                <p>Conveniently scale market-driven schemas before dynamic
+                                    action items. Quickly visualize real-time niche markets
+                                    vis-a-vis future-proof infomediaries. Progressively.</p>
                             </div>
                         </div>
                     </div>
@@ -808,38 +707,44 @@
         <!-- End Services Section -->
 
         <!-- Start Testimonials Section -->
-        <section id="Our-Commitment-scroll"
-            class="about-style-two-area container-fluid section-scroll">
-            <div class="custom-container">
-                <div class="row align-center custom-card-1">
-                    <div class="col-12 col-lg-2 d-none d-lg-block"></div>
-                    <div
-                        class="col-12 col-md-7 col-lg-6 order-2 order-lg-1 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
-                        <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">Our Commitment</h2>
-                        <p>
-                            At Cresco, we are not just investment managers; we are stewards of your wealth. We are
-                            committed to growing your portfolio while safeguarding your capital, ensuring your financial
-                            goals are met with confidence and care.
-                            <br><br>
-                            Let us guide you through the complexities of modern investing and unlock the potential of
-                            your wealth.
-
-                        </p>
-                    </div>
-                    <div class="col-12 col-md-5 col-lg-4 order-1 order-lg-2 custom-card-img pb-4">
-                        <div class="thumb thumb-img">
-                            <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
+        <section id="test-scroll" class="section-scroll">
+            <div class="container-scroll">
+                <div class="content-wrapper-scroll text-center-scroll">
+                    <div class="content-scroll">
+                        <h2>My Clients Say</h2>
+                        <p>Monotonectally procrastinate backend interfaces vis-a-vis
+                            bricks-and-clicks action items.</p>
+                        <div class="client-scroll">
+                            <p>Collaboratively procrastinate interactive platforms via
+                                world-class customer service. Uniquely optimize ethical
+                                partnerships rather than functional niches. Synergistically
+                                predominate distributed functionalities with exceptional ROI.
+                                Continually.</p>
+                            <h4>Ahmed Beheiry</h4>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
         <!-- End Testimonials Section -->
 
-    </div>
+        <!-- Start Contact Section -->
+        <section id="contact-scroll">
+            <div class="container-scroll">
+                <div class="content-wrapper-scroll text-center-scroll">
+                    <div class="content-scroll">
+                        <h2>Contact Me</h2>
+                        <p>disintermediate multimedia based e-markets whereas
+                            interoperable value.</p>
+                        <p class="mail-scroll">Ahmed_beheiry@yahoo.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+    </section>
 
-    <section class="container-fluid px-0" id="trading" style="">
+    <section class="container-fluid px-0 mt-3" id="trading">
         <div class="news-section-top">
             <div class="custom-container">
                 <div class="row">
@@ -872,7 +777,7 @@
         </div>
     </section>
 
-    <section id="budget"
+    <div id="budget"
         class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-top default-padding-bottom bg-white"
         style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important;">
         <div class="custom-container">
@@ -932,156 +837,154 @@
 
             </div>
         </div>
-    </section>
+    </div>
     <!-- End Faq -->
 
     <!-- Start Footer 
     ============================================= -->
-    <section>
-        <footer class="bg-dark text-light">
-            <div class="footer-shape">
-                <div class="item">
-                    <img src="assets/img/shape/7.png" alt="Shape">
-                </div>
-                <div class="item">
-                    <img src="assets/img/shape/9.png" alt="Shape">
-                </div>
+    <footer class="bg-dark text-light">
+        <div class="footer-shape">
+            <div class="item">
+                <img src="assets/img/shape/7.png" alt="Shape">
             </div>
-            <div class="container">
-                <div class="f-items relative pt-70 pb-120 pt-xs-0 pb-xs-50">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 footer-item pr-50 pr-xs-15">
-                            <div class="f-item about">
-                                <img class="logo" src="assets/img/logo-light.png" alt="Logo">
-                                <p>
-                                    Excellence decisively nay man twins impression maximum contrasted remarkably is perfect.
-                                </p>
-                                <div class="opening-hours">
-                                    <h5>Opening Hours</h5>
-                                    <ul>
-                                        <li>
-                                            <div class="working-day">Monday – Sunday:</div>
-                                            <div class="marker"></div>
-                                            <div class="working-hour">2pm – 2pm</div>
-                                        </li>
-                                        <li>
-                                            <div class="working-day">Sunday:</div>
-                                            <div class="marker"></div>
-                                            <div class="working-hour">Off Day</div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 footer-item">
-                            <div class="f-item link">
-                                <h4 class="widget-title">Our Company</h4>
-                                <ul>
-                                    <li>
-                                        <a href="about-us.html">Compnay Profile</a>
-                                    </li>
-                                    <li>
-                                        <a href="faq.html">Help Center</a>
-                                    </li>
-                                    <li>
-                                        <a href="about-us.html">Career</a>
-                                    </li>
-                                    <li>
-                                        <a href="pricing.html">Plans & Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-us.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 footer-item">
-                            <div class="f-item link">
-                                <h4 class="widget-title">Our Services</h4>
-                                <ul>
-                                    <li>
-                                        <a href="services-details.html">Manage investment</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-details.html">Business planning</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-details.html">Financial advices</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-details.html">Tax strategy</a>
-                                    </li>
-                                    <li>
-                                        <a href="services-details.html">Insurance strategy</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 footer-item">
-                            <h4 class="widget-title">Newsletter</h4>
+            <div class="item">
+                <img src="assets/img/shape/9.png" alt="Shape">
+            </div>
+        </div>
+        <div class="container">
+            <div class="f-items relative pt-70 pb-120 pt-xs-0 pb-xs-50">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-item pr-50 pr-xs-15">
+                        <div class="f-item about">
+                            <img class="logo" src="assets/img/logo-light.png" alt="Logo">
                             <p>
-                                Join our subscribers list to get the latest <br> news and special offers.
+                                Excellence decisively nay man twins impression maximum contrasted remarkably is perfect.
                             </p>
-                            <div class="f-item newsletter">
-                                <form action="#">
-                                    <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                    <button type="submit"> Subscribe</button>
-                                </form>
+                            <div class="opening-hours">
+                                <h5>Opening Hours</h5>
+                                <ul>
+                                    <li>
+                                        <div class="working-day">Monday – Sunday:</div>
+                                        <div class="marker"></div>
+                                        <div class="working-hour">2pm – 2pm</div>
+                                    </li>
+                                    <li>
+                                        <div class="working-day">Sunday:</div>
+                                        <div class="marker"></div>
+                                        <div class="working-hour">Off Day</div>
+                                    </li>
+                                </ul>
                             </div>
-                            <ul class="footer-social">
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-    
-            <!-- Start Footer Bottom -->
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <!-- <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">validthemes</a></p> -->
-                        </div>
-                        <div class="col-lg-6 text-end">
+                    <div class="col-lg-2 col-md-6 footer-item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Our Company</h4>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">Terms</a>
+                                    <a href="about-us.html">Compnay Profile</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html">Privacy</a>
+                                    <a href="faq.html">Help Center</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">Support</a>
+                                    <a href="about-us.html">Career</a>
+                                </li>
+                                <li>
+                                    <a href="pricing.html">Plans & Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html">Contact</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="col-lg-2 col-md-6 footer-item">
+                        <div class="f-item link">
+                            <h4 class="widget-title">Our Services</h4>
+                            <ul>
+                                <li>
+                                    <a href="services-details.html">Manage investment</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">Business planning</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">Financial advices</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">Tax strategy</a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">Insurance strategy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-item">
+                        <h4 class="widget-title">Newsletter</h4>
+                        <p>
+                            Join our subscribers list to get the latest <br> news and special offers.
+                        </p>
+                        <div class="f-item newsletter">
+                            <form action="#">
+                                <input type="email" placeholder="Your Email" class="form-control" name="email">
+                                <button type="submit"> Subscribe</button>
+                            </form>
+                        </div>
+                        <ul class="footer-social">
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- End Footer Bottom -->
-    
-        </footer>
-    </section>
+        </div>
+
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <!-- <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">validthemes</a></p> -->
+                    </div>
+                    <div class="col-lg-6 text-end">
+                        <ul>
+                            <li>
+                                <a href="about-us.html">Terms</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Bottom -->
+
+    </footer>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
@@ -1112,6 +1015,44 @@
 
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        $(function () {
+
+            var link = $('#navbar a.dot');
+
+            // Move to specific section when click on menu link
+            link.on('click', function (e) {
+                var target = $($(this).attr('href'));
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 600);
+                $(this).addClass('active');
+                e.preventDefault();
+            });
+
+            // Run the scrNav when scroll
+            $(window).on('scroll', function () {
+                scrNav();
+            });
+
+            // scrNav function 
+            // Change active dot according to the active section in the window
+            function scrNav() {
+                var sTop = $(window).scrollTop();
+                $('section').each(function () {
+                    var id = $(this).attr('id'),
+                        offset = $(this).offset().top - 1,
+                        height = $(this).height();
+                    if (sTop >= offset && sTop < offset + height) {
+                        link.removeClass('active');
+                        $('#navbar').find('[data-scroll="' + id + '"]').addClass('active');
+                    }
+                });
+            }
+            scrNav();
+        });
     </script>
 
 </body>

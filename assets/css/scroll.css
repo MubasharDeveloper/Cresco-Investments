@@ -1,0 +1,278 @@
+:root {
+  --custom-gray: #c3c3c3;
+}
+
+.section-scroll {
+  min-height: 100vh;
+  padding-top: 88px;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.container-scroll {
+  width: 1170px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.text-center-scroll {
+  text-align: center;
+}
+
+.text-left-scroll {
+  text-align: left;
+}
+
+.text-right-scroll {
+  text-align: right;
+}
+
+.content-wrapper-scroll {
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+  /* min-height: 800px; */
+}
+
+.content-scroll {
+  display: table-cell;
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* End Global Styles */
+
+/* Start Nav Styles */
+.navbar-scroll {
+  position: sticky;
+  z-index: 999;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-30%);
+  width: 100%;
+  right: 0px;
+}
+
+.navbar-scroll .nav-menu-scroll {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-left: 0px;
+  width: fit-content;
+}
+
+.navbar-scroll .nav-menu-scroll li {
+  position: relative;
+  min-width: fit-content;
+  text-align: left;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll {
+  display: block;
+  color: #fff;
+  padding: 5px 0;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll::before,
+.navbar-scroll .nav-menu-scroll li .dot-scroll::after {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  top: 50%;
+  transition: all .3s ease;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll::before {
+  width: 12px;
+  height: 12px;
+  left: 0;
+  border: 2px solid var(--custom-gray);
+  transform: translateY(-50%);
+  background: var(--custom-gray);
+  top: 19px;
+  z-index: 1;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll::after {
+  width: 19px;
+  height: 19px;
+  border: 2px solid #000;
+  left: -4px;
+  transform: translateY(-50%) scale(0);
+  top: 19px;
+  display: none;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll.active::before,
+.navbar-scroll .nav-menu-scroll li:hover .dot-scroll::before {
+  background: #000;
+  border-color: #000;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll.active::after,
+.navbar-scroll .nav-menu-scroll li:hover .dot-scroll::after {
+  transform: translateY(-50%) scale(1);
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll span {
+  display: inline-block;
+  opacity: 1;
+  font-weight: 700;
+  /* letter-spacing: .5px; */
+  text-transform: capitalize;
+  /* background-color: #000; */
+  padding: 0px 20px 10px 6px;
+  border-radius: 3px;
+  margin-left: 14px;
+  transform: translateX(0px);
+  transition: all .3s ease;
+  color: #aaaaaa;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll span::before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-right: 3px solid var(--custom-gray);
+  /* border-top: 7px solid transparent; */
+  border-bottom: 42px solid var(--custom-gray);
+  top: 46%;
+  /* transform: translate(7px, -50%); */
+  left: -10px;
+  transition: all .3s ease;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll.active span,
+.navbar-scroll .nav-menu-scroll li:hover .dot-scroll span {
+  transform: translateX(0px);
+  opacity: 1;
+  color: #000;
+  text-shadow: 0px 0px 8px;
+}
+
+.navbar-scroll .nav-menu-scroll li .dot-scroll span{
+  line-height: normal;
+}
+
+/* End Nav Styles */
+
+/* Start Home Styles */
+#home-scroll {
+  background-color: #f6f6f6;
+}
+
+#home-scroll button {
+  border: 2px solid #ffc107;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 25px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  transition: all .3s ease;
+  margin-top: 20px;
+}
+
+#home-scroll button:hover {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+/* End Home Styles */
+
+/* Start About Styles */
+#about-scroll .container-scroll {
+  padding: 100px 0;
+}
+
+#about-scroll p {
+  width: 60%;
+  margin: 10px auto;
+}
+
+#about-scroll img {
+  margin-top: 40px;
+}
+
+/* End About Styles */
+
+/* Start Services Styles */
+#services-scroll {
+  background-color: #eee;
+}
+
+#services-scroll .services-scroll {
+  margin: 40px auto;
+}
+
+#services-scroll .services-scroll .service-scroll {
+  width: 50%;
+  padding: 1%;
+}
+
+#services-scroll .text-right-scroll {
+  float: right;
+}
+
+#services-scroll .text-left-scroll {
+  float: left;
+}
+
+/* End Services Styles */
+
+/* Start Testimonials Styles */
+#test-scroll,
+#test-scroll .content-wrapper-scroll {
+  /* min-height: 400px; */
+}
+
+/* End Testimonials Styles */
+
+/* Start Contact Styles */
+#contact-scroll {
+  /* min-height: 600px; */
+  background-color: #222;
+  color: #fff;
+}
+
+#contact-scroll .content-wrapper-scroll {
+  /* min-height: 600px; */
+}
+
+#contact-scroll p {
+  color: #eee;
+}
+
+#contact-scroll .mail-scroll {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+/* End Contact Styles */
+
+.nav-menu-scroll li:last-child .dot-scroll span::before {
+  display: none;
+  /* Hides the pseudo-element for the last child */
+}
+
+.scroll-ul {
+  list-style: disc !important;
+  list-style-position: outside !important;
+  margin-bottom: 12px;
+  margin-left: 20px;
+}
+
+.scroll-card{
+  border: 2px solid var(--custom-gray);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px var(--custom-gray);
+  transition: all 0.5s ease-in-out;
+}
+
+.thumb-img{
+  box-shadow: 0px 0px 20px;
+  border-radius: 16px;
+}
