@@ -419,6 +419,8 @@
         #goals {
             height: 990px !important;
             /* margin-bottom: 70px !important; */
+            z-index: 9999;
+            position: relative;
         }
 
         @media(max-width: 850px) {
@@ -500,7 +502,7 @@
     <!-- Start Banner Area 
     ============================================= -->
     <section id="home" style="">
-        <div class="banner-area banner-style-one shadow navigation-custom-large zoom-effect overflow-hidden text-light">
+        <div class="banner-area banner-style-one shadow navigation-custom-large overflow-hidden text-light">
             <div class="banner-fade">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide banner-style-one" style="aspect-ratio: 16/9 !important;">
@@ -508,23 +510,6 @@
                             style="background: url(assets/img/Background-image.jpg); aspect-ratio: 16/9 !important;">
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="home-2">
-        <div class="container">
-            <div class="card w-100" style="border: 2px solid; border-radius: 20px; margin: 120px 0px;">
-                <div class="card-body p-5" data-aos="fade-up" data-aos-duration="1600">
-                    <h2 style="font-weight: 600; text-align: center;"><em>Cresco</em></h2>
-                    <p class="m-0 p-0" style="font-size: 22px; text-align: justify; line-height: 32px;">
-                        At <strong><em>Cresco Investments</em></strong>, we specialise in creating tailored investment
-                        solutions designed to help individuals, families, and institutions achieve their financial goals
-                        and build lasting wealth. With a focus on excellence, transparency, and innovation, we provide
-                        clients with access to a diversified portfolio of opportunities spanning real estate, fixed
-                        income, alternative investments, and bespoke asset management strategies.
-                    </p>
                 </div>
             </div>
         </div>
@@ -588,6 +573,23 @@
         </div>
     </section>
 
+    <!-- <section id="home-2">
+        <div class="container">
+            <div class="card w-100" style="border: 2px solid; border-radius: 20px; margin: 120px 0px;">
+                <div class="card-body p-5" data-aos="fade-up" data-aos-duration="1600">
+                    <h2 style="font-weight: 600; text-align: center;"><em>Cresco</em></h2>
+                    <p class="m-0 p-0" style="font-size: 22px; text-align: justify; line-height: 32px;">
+                        At <strong><em>Cresco Investments</em></strong>, we specialise in creating tailored investment
+                        solutions designed to help individuals, families, and institutions achieve their financial goals
+                        and build lasting wealth. With a focus on excellence, transparency, and innovation, we provide
+                        clients with access to a diversified portfolio of opportunities spanning real estate, fixed
+                        income, alternative investments, and bespoke asset management strategies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
     <div class="scrolly-div position-relative">
         <!-- Start Nav Section -->
         <div id="navbar-scroll" class="navbar-scroll">
@@ -635,7 +637,7 @@
                 <div class="row align-center custom-card-1">
                     <div class="col-12 col-lg-2 d-none d-lg-block"></div>
                     <div
-                        class="col-12 col-md-7 col-lg-6 order-2 order-lg-1 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
+                        class="col-12 col-md-7 col-lg-6 order-2 order-lg-1 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center" data-aos="fade-right">
                         <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">About <em>Cresco</em></h2>
                         <p>
                             <em>Cresco</em> Investments is a full-service asset and investment management company
@@ -670,7 +672,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 order-1 order-lg-2 custom-card-img pb-4">
-                        <div class="thumb thumb-img">
+                        <div class="thumb thumb-img" data-aos="zoom-in">
                             <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
                         </div>
                     </div>
@@ -689,7 +691,7 @@
                     <div class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
                         <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">Opportunities</h2>
                         <div class="row g-3 mt-3 justify-content-center text-center">
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-right">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Holistic Wealth Management</h3>
@@ -701,7 +703,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-left">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Real Estate Investment </h3>
@@ -712,7 +714,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-right">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Fixed-Income Investments</h3>
@@ -722,7 +724,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-left">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Alternative Investments</h3>
@@ -733,7 +735,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-up">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Institutional Solutions</h3>
@@ -760,7 +762,7 @@
                     <div class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
                         <h2 class="title text-dark" style="text-shadow: 0px 0px 16px;">Why Choose <em>Cresco?</em></h2>
                         <div class="row g-3 mt-3 justify-content-center text-center">
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-right">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Expertise Across Asset Classes</h3>
@@ -770,7 +772,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-left">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Global Reach, Local Expertise</h3>
@@ -780,7 +782,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-right">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Innovative Solutions</h3>
@@ -790,7 +792,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 px-2">
+                            <div class="col-6 px-2" data-aos="fade-left">
                                 <div class="card scroll-card p-0 h-100">
                                     <div class="card-body p-4">
                                         <h3 class="mb-2">Personalised Service</h3>
@@ -827,7 +829,7 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 order-1 order-lg-2 custom-card-img pb-4">
-                        <div class="thumb thumb-img">
+                        <div class="thumb thumb-img"data-aos="zoom-in">
                             <img src="assets/img/investor-center-image.jpg" alt="Image Not Found">
                         </div>
                     </div>
@@ -839,7 +841,7 @@
 
     </div>
 
-    <section class="container-fluid px-0" id="trading" style="">
+    <section class="container-fluid px-0" id="trading" style="padding-top: 88px;">
         <div class="news-section-top">
             <div class="custom-container">
                 <div class="row">
@@ -874,13 +876,13 @@
 
     <section id="budget"
         class="about-style-two-area overflow-hidden bg-contain bg-gray default-padding-top default-padding-bottom bg-white"
-        style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important;">
+        style="background-image: url('assets/img/backgroung-img.jpg') !important; background-position: center !important; background-repeat: no-repeat !important; background-size: 1500px !important; padding-top: 208px;">
         <div class="custom-container">
             <div class="row align-center default-padding-bottom custom-card-2">
 
                 <div class="col-12 col-lg-2"></div>
 
-                <div class="col-12 col-md-5 col-lg-4 about-style-two custom-card-inner pb-4">
+                <div class="col-12 col-md-5 col-lg-4 about-style-two custom-card-inner pb-4" data-aos="zoom-in-right">
                     <div class="card bg-secondary p-3 pb-5"
                         style="border-radius: 1rem !important; background: #e5e5e5 !important; border-color: #e5e5e5e5 !important;">
                         <div class="card-body pb-5">
@@ -896,7 +898,7 @@
                 </div>
 
                 <div
-                    class="about-style-two col-12 col-md-7 col-lg-5 offset-lg-1 custom-card-content d-flex flex-column justify-content-center">
+                    class="about-style-two col-12 col-md-7 col-lg-5 offset-lg-1 custom-card-content d-flex flex-column justify-content-center" data-aos="zoom-in-left">
                     <h2 class="title text-dark">Create Your Own <br> Budget</h2>
                     <p>
                         Saving money is key to achieving your financial goals. Set up automatic transfers to a savings
@@ -910,7 +912,7 @@
                 <div class="col-12 col-lg-2"></div>
 
                 <div
-                    class="about-style-two col-12 col-md-7 col-lg-5 order-2 order-md-1 custom-card-content d-flex flex-column justify-content-center">
+                    class="about-style-two col-12 col-md-7 col-lg-5 order-2 order-md-1 custom-card-content d-flex flex-column justify-content-center" data-aos="zoom-in-right">
                     <h2 class="title text-dark">Invest for your <br> Future</h2>
                     <p>
                         Investing is a great way to build wealth over time. Consider opening a retirement account or
@@ -919,7 +921,7 @@
                 </div>
 
                 <div
-                    class="col-12 col-md-5 col-lg-4 offset-lg-1 about-style-two order-1 order-md-2 custom-card-inner pb-4">
+                    class="col-12 col-md-5 col-lg-4 offset-lg-1 about-style-two order-1 order-md-2 custom-card-inner pb-4" data-aos="zoom-in-left">
                     <div class="card bg-dark p-3 card-3" style="border-radius: 1rem !important;">
                         <div class="card-body">
                             <h1 class="card-title text-white mb-5" style="line-height: 1 !important;">Invested <br>

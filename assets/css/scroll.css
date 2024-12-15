@@ -3,10 +3,11 @@
 }
 
 .section-scroll {
-  min-height: 100vh;
-  padding-top: 88px;
+  min-height: 60vh;
+  padding-top: 120px;
   display: flex !important;
   align-items: center !important;
+  font-size: 20px !important;
 }
 
 .container-scroll {
@@ -46,9 +47,9 @@
 .navbar-scroll {
   position: sticky;
   z-index: 999;
-  top: 50%;
+  top: 62%;
   right: 50px;
-  transform: translateY(-30%);
+  transform: translateY(-95%);
   width: 100%;
   right: 0px;
 }
@@ -263,6 +264,7 @@
   list-style-position: outside !important;
   margin-bottom: 12px;
   margin-left: 20px;
+  font-size: 17px;
 }
 
 .scroll-card{
@@ -275,4 +277,8 @@
 .thumb-img{
   box-shadow: 0px 0px 20px;
   border-radius: 16px;
+}
+
+.scroll-card .card-text{
+  font-size: 18px !important;
 }
