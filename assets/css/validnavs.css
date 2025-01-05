@@ -454,7 +454,7 @@ nav.navbar.validnavs .navbar-toggle {
 	background: transparent;
 	border: none;
 	font-size: 25px;
-	padding: 30px 0;
+	padding: 30px 20px;
 }
 
 nav.navbar.validnavs .navbar-toggle i {
@@ -585,7 +585,7 @@ nav.validnavs.navbar-full .navbar-collapse ul.nav {
 	width: 100%; /* Expand the border to full width */
   }
 .validnavs a:focus,
-.validnavs a:hover,
+/* .validnavs a:hover, */
 .validnavs a.active {
 	background: transparent !important;
 }

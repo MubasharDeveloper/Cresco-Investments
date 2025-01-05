@@ -737,7 +737,13 @@ p {
 
 .title {
 	font-weight: 600;
-	font-size: 42px;
+    font-size: 42px;
+    margin-top: 12px;
+    width: fit-content;
+    background: #000;
+    padding: 8px 28px;
+    border-radius: 10px;
+    color: #fff !important;
 }
 
 .site-heading .title {
@@ -8738,7 +8744,7 @@ footer .newsletter form button {
 	top: 5px;
 	padding: 9px 20px;
 	text-transform: uppercase;
-	background: var(--color-primary);
+	background: #999999;
 	border: none;
 	color: var(--white);
 	font-weight: 600;
@@ -12325,5 +12331,145 @@ ul.list-regular li::after {
 }
 
 .collapse-mobile ul li a{
+	color: #000 !important;
+}
+
+.btn-parrent{
+	width: 60%;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    height: 80% !important;
+    position: relative;
+}
+
+@media(max-width:1700px){
+	.btn-parrent{
+		width: 61%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 82% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1600px){
+	.btn-parrent{
+		width: 62%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 82% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1600px){
+	.btn-parrent{
+		width: 63%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 82% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1440px){
+	.btn-parrent{
+		width: 64%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 82% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1250px){
+	.btn-parrent{
+		width: 66%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 84% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1100px){
+	.btn-parrent{
+		width: 68%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 84% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1040px){
+	.btn-parrent{
+		width: 69%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 86% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:1040px){
+	.btn-parrent{
+		width:71%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 86% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:870px){
+	.btn-parrent{
+		width: 73%;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        height: 89% !important;
+        position: relative;
+	}
+}
+
+@media(max-width:768px){
+	.btn-parrent{
+		display: none;
+	}
+}
+
+.btn-div{
+	position: absolute;
+    bottom: 0;
+    right: 15px;
+    padding: 10px 25px;
+    background: #ffffff;
+    color: #000000 !important;
+    border-radius: 12px;
+}
+
+.btn-div:hover{
+	box-shadow: 0px 0px 20px 4px #fff;
+    transition: all .5s ease-in-out;
+}
+
+.nav-bar-meeting-btn{
+	display: none;
+}
+
+@media(max-width: 768px){
+	.nav-bar-meeting-btn{
+		display: block;
+		padding: 4px 10px;
+		border-radius: 8px;
+		color: #000 !important;
+        background: #fff !important;
+	}
+}
+
+.nav-bar-meeting-btn:hover{
+	box-shadow: 0px 0px 20px 4px #fff;
+    transition: all .5s ease-in-out;
+	background-color: #fff !important;
 	color: #000 !important;
 }

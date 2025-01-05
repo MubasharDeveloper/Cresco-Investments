@@ -347,14 +347,14 @@
                     });
                 });
 
-                $('.navbar-collapse').addClass('collapse-mobile');
-
+                
                 $("nav.navbar.validnavs.menu-onepage li a").each(function() {
                     $(this).on("click", function() {
                         $('.navbar-collapse').addClass("hide_menu");
                     });
                 });
-
+                
+                $('.navbar-collapse').addClass('collapse-mobile');
 
             } else if (getWindow > 1023) {
                 // Height of scroll navigation sidebar
