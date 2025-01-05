@@ -746,6 +746,12 @@ p {
     color: #fff !important;
 }
 
+@media(max-width: 660px){
+	.title{
+		width: 100%;
+	}
+}
+
 .site-heading .title {
 	margin-bottom: 0;
 }
