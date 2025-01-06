@@ -454,7 +454,7 @@ nav.navbar.validnavs .navbar-toggle {
 	background: transparent;
 	border: none;
 	font-size: 25px;
-	padding: 30px 20px;
+	padding: 30px 0px;
 }
 
 nav.navbar.validnavs .navbar-toggle i {
@@ -2492,7 +2492,7 @@ nav.navbar.validnavs.brand-center {
 	}
 
 	nav.navbar.validnavs .navbar-toggle {
-		margin: 0 15px;
+		/* margin: 0 15px; */
 	}
 
 	nav.navbar.validnavs.brand-center .navbar-toggle {

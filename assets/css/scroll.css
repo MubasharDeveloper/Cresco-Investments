@@ -10,6 +10,12 @@
   font-size: 20px !important;
 }
 
+@media(max-width: 768px){
+  .section-scroll {
+    padding-top: 35px;
+  }
+}
+
 .container-scroll {
   width: 1170px;
   max-width: 90%;
