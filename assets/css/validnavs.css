@@ -454,7 +454,7 @@ nav.navbar.validnavs .navbar-toggle {
 	background: transparent;
 	border: none;
 	font-size: 25px;
-	padding: 30px 20px;
+	padding: 30px 0px;
 }
 
 nav.navbar.validnavs .navbar-toggle i {
@@ -3276,5 +3276,65 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 
 	nav.navbar.validnavs.navbar-fixed.no-background.navbar-style-one .navbar-nav li a {
 		color: var(--color-heading);
+	}
+}
+
+
+
+.heading{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	.heading-logo{
+		width: 50px; 
+		
+		& img{
+			width: 100%;
+		}
+	}
+}
+
+
+/* .increase-z-index{
+	position: relative;
+} */
+.first-long-card{
+	.card-body{
+		background-image: url(../img/pic1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.second-long-card{
+	.card-body{
+		background-image: url(../img/pic2.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.third-long-card{
+	.card-body{
+		background-image: url(../img/pic3.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.fourth-long-card{
+	.card-body{
+		background-image: url(../img/pic4.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.fifth-long-card{
+	.card-body{
+		background-image: url(../img/pic5.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
 	}
 }
