@@ -10,7 +10,7 @@
   font-size: 20px !important;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px) {
   .section-scroll {
     padding-top: 35px;
   }
@@ -22,13 +22,13 @@
   margin: 0 auto;
 }
 
-#about-sresco-scroll{
+#Opportunities-scroll {
   padding-top: 0px !important;
   margin-top: -80px !important;
 }
 
-@media(max-width: 992px){
-  #about-sresco-scroll{
+@media(max-width: 992px) {
+  #Opportunities-scroll {
     padding-top: 20px !important;
     margin-top: 0px !important;
   }
@@ -172,7 +172,7 @@
   text-shadow: 0px 0px 8px;
 }
 
-.navbar-scroll .nav-menu-scroll li .dot-scroll span{
+.navbar-scroll .nav-menu-scroll li .dot-scroll span {
   line-height: normal;
 }
 
@@ -285,18 +285,19 @@
   font-size: 17px;
 }
 
-.scroll-card{
+.scroll-card {
   border: 2px solid var(--custom-gray);
   border-radius: 20px;
   box-shadow: 0px 0px 20px var(--custom-gray);
   transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 
-.thumb-img{
+.thumb-img {
   box-shadow: 0px 0px 20px;
   border-radius: 16px;
 }
 
-.scroll-card .card-text{
+.scroll-card .card-text {
   font-size: 18px !important;
 }

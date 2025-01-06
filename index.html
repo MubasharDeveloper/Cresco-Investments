@@ -204,12 +204,12 @@
         }
 
         .news-section-top {
-            background-color: #000233 !important;
+            background-color: #000 !important;
             padding: 0px 0px 20px 0px !important;
         }
 
         .news-section-bottom {
-            background-color: #171945 !important;
+            background-color: #3f3f3f !important;
             padding: 0px 0px 20px 0px !important;
         }
 
@@ -416,58 +416,29 @@
             background: #000;
         }
 
-        #goals {
-            height: 990px !important;
-            /* margin-bottom: 70px !important; */
-            z-index: 9999;
+        #goal {
+            z-index: 9;
             position: relative;
         }
 
-        @media(max-width: 850px) {
-            #goals {
-                height: 800px !important;
-            }
-        }
-
-        @media(max-width: 660px) {
-            #goals {
-                height: 750px !important;
-            }
-        }
-
-        @media(max-width: 450px) {
-            #goals {
-                height: 650px !important;
-            }
-        }
-
-        @media(max-width: 400px) {
-            #goals {
-                height: 585px !important;
-            }
-        }
-
-        @media(max-width: 350px) {
-            #goals {
-                height: 535px !important;
-            }
-        }
         .video-cover-div {
             border-radius: 10px;
         }
-.thumb-img{
-    aspect-ratio: 3/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     & img{
-         aspect-ratio: 4/3;
-     }    
-}
-.thumb-nail-one-wrapper{
-    aspect-ratio: 4/3;
-}
 
+        .thumb-img {
+            aspect-ratio: 3/4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                aspect-ratio: 4/3;
+            }
+        }
+
+        .thumb-nail-one-wrapper {
+            aspect-ratio: 4/3;
+        }
     </style>
 
 </head>
@@ -493,7 +464,7 @@
 
                     <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#goals">Goals</a></li>
+                        <li><a href="#goal">Goals</a></li>
                         <li><a href="#about-sresco-scroll">About</a></li>
                         <li><a href="#trading">Trading</a></li>
                         <li><a href="#budget">Budget</a></li>
@@ -536,15 +507,15 @@
         </div>
     </section>
 
-    <section id="goals">
+    <section id="goal">
         <div class="row h-100 " style="max-width: 100% !important; align-items: center !important;">
-            <div class="col-12 col-lg-6 d-none d-lg-block h-100 px-0 bg-dark position-relative bg-video-main-wrapper">
+            <div class="col-12 col-lg-6 d-none d-lg-block h-100 px-0 bg-dark position-relative bg-video-main-wrapper" style="max-height: 90vh !important; overflow: hidden;">
                 <div class="video-cover-div w-100 h-100 rounded-circle">
                     <video width="100%" height="100%" style="" loop autoplay muted>
                         <source src="assets/video/bg-video.mp4" type="video/mp4">
                         <source src="video.webm" type="video/webm">
                         Your browser does not support the video tag.
-                      </video>
+                    </video>
                 </div>
                 <!-- <h1 class="sec-hero-heading text-white pb-5 d-flex align-items-end justify-content-center ms-5 h-100"
                     style=""><strong>Achieve Your <br> Financial Goals</strong></h1> -->
@@ -594,42 +565,42 @@
                         </div>
                     </div>
                 </div> -->
-          
-                <div
-                class="px-5 custom-card-content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-duration="1500">
-                <h2 class="title text-dark" style="">About <em>Cresco</em></h2>
-                <p>
-                    <em>Cresco</em> Investments is a full-service asset and investment management company
-                    committed to
-                    providing exceptional results and unparalleled client experiences. With decades of
-                    collective expertise in financial markets, real estate, private equity, and wealth advisory,
-                    we serve as a trusted partner for high-net-worth individuals, family offices, and
-                    institutional investors worldwide.
-                    <br><br>
-                    Our approach is guided by three core principles:
-                <ul type="disc">
-                    <li class="scroll-ul">
-                        <span>
-                            <strong>Security:</strong> Capital preservation is at the heart of our strategy,
-                            ensuring that all investments are carefully vetted and risk-managed.
-                        </span>
-                    </li>
-                    <li class="scroll-ul">
-                        <span>
-                            <strong>Performance:</strong> We seek to deliver consistent and superior returns
-                            through disciplined research and market expertise.
-                        </span>
-                    </li>
-                    <li class="scroll-ul">
-                        <span>
-                            <strong>Transparency:</strong> Clear communication and robust reporting are integral
-                            to building trust with our clients
-                        </span>
-                    </li>
-                </ul>
 
-                </p>
-            </div>
+                <div class="px-5 custom-card-content d-flex flex-column justify-content-center" data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <h2 class="title text-dark" style="">About <em>Cresco</em></h2>
+                    <p>
+                        <em>Cresco</em> Investments is a full-service asset and investment management company
+                        committed to
+                        providing exceptional results and unparalleled client experiences. With decades of
+                        collective expertise in financial markets, real estate, private equity, and wealth advisory,
+                        we serve as a trusted partner for high-net-worth individuals, family offices, and
+                        institutional investors worldwide.
+                        <br><br>
+                        Our approach is guided by three core principles:
+                    <ul type="disc">
+                        <li class="scroll-ul">
+                            <span>
+                                <strong>Security:</strong> Capital preservation is at the heart of our strategy,
+                                ensuring that all investments are carefully vetted and risk-managed.
+                            </span>
+                        </li>
+                        <li class="scroll-ul">
+                            <span>
+                                <strong>Performance:</strong> We seek to deliver consistent and superior returns
+                                through disciplined research and market expertise.
+                            </span>
+                        </li>
+                        <li class="scroll-ul">
+                            <span>
+                                <strong>Transparency:</strong> Clear communication and robust reporting are integral
+                                to building trust with our clients
+                            </span>
+                        </li>
+                    </ul>
+
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -742,69 +713,90 @@
             </div>
         </section> -->
         <!-- End Home Section -->
-        
+
         <!-- Start About Me Section -->
-        <section id="Opportunities-scroll"
-            class="about-style-two-area container-fluid section-scroll">
+        <section id="Opportunities-scroll" class="about-style-two-area container-fluid section-scroll">
             <div class="custom-container">
                 <div class="row align-center custom-card-1">
                     <div class="col-12 col-lg-2 d-none d-lg-block"></div>
-                    <div class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
+                    <div
+                        class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
                         <h2 class="title text-dark" style="">Opportunities</h2>
                         <div class="row g-3 mt-3 justify-content-center text-center">
-                            <div class="px-2 first-long-card" style="height: 500px;" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="px-2 first-long-card" style="height: 360px;" data-aos="fade-up"
+                                data-aos-duration="1500">
                                 <div class="card scroll-card p-0 h-100">
-                                   
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Holistic Wealth Management</h3>
-                                        <p class="card-text">
-                                            From portfolio creation to ongoing management, we provide bespoke solutions
-                                            that align with your financial objectives. Whether it’s wealth preservation
-                                            or growth, we craft strategies to suit your unique needs.
-                                        </p>
+
+                                    <div class="card-body p-0">
+                                        <div class="inner-card-body">
+                                            <h3 class="mb-2">Holistic Wealth Management</h3>
+                                            <p class="card-text">
+                                                From portfolio creation to ongoing management, we provide bespoke
+                                                solutions
+                                                that align with your financial objectives. Whether it’s wealth
+                                                preservation
+                                                or growth, we craft strategies to suit your unique needs.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-2 second-long-card" style="height: 500px;" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="px-2 second-long-card" style="height: 360px;" data-aos="fade-up"
+                                data-aos-duration="1500">
                                 <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Real Estate Investment </h3>
-                                        <p class="card-text">
-                                            Our expertise in real estate spans residential, commercial, and industrial
-                                            assets, including high-yield labour accommodations, luxury developments, and
-                                            emerging market projects. </p>
+                                    <div class="card-body p-0">
+                                        <div class="inner-card-body">
+                                            <h3 class="mb-2">Real Estate Investment </h3>
+                                            <p class="card-text">
+                                                Our expertise in real estate spans residential, commercial, and
+                                                industrial
+                                                assets, including high-yield labour accommodations, luxury developments,
+                                                and
+                                                emerging market projects. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-2 third-long-card" style="height: 500px;" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="px-2 third-long-card" style="height: 360px;" data-aos="fade-up"
+                                data-aos-duration="1500">
                                 <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Fixed-Income Investments</h3>
-                                        <p class="card-text">
-                                            We offer secure, asset-backed fixed-income opportunities with predictable
-                                            returns, designed for those seeking stability in volatile markets. </p>
+                                    <div class="card-body p-0">
+                                        <div class="inner-card-body">
+                                            <h3 class="mb-2">Fixed-Income Investments</h3>
+                                            <p class="card-text">
+                                                We offer secure, asset-backed fixed-income opportunities with
+                                                predictable
+                                                returns, designed for those seeking stability in volatile markets. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-2 fourth-long-card" style="height: 500px;" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="px-2 fourth-long-card" style="height: 360px;" data-aos="fade-up"
+                                data-aos-duration="1500">
                                 <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Alternative Investments</h3>
-                                        <p class="card-text">
-                                            Diversify your portfolio with unique opportunities in private equity,
-                                            infrastructure, venture capital, litigation funding and specialised
-                                            financial instruments. </p>
+                                    <div class="card-body p-0">
+                                        <div class="inner-card-body">
+                                            <h3 class="mb-2">Alternative Investments</h3>
+                                            <p class="card-text">
+                                                Diversify your portfolio with unique opportunities in private equity,
+                                                infrastructure, venture capital, litigation funding and specialised
+                                                financial instruments. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-2 fifth-long-card" style="height: 500px;" data-aos="fade-up" data-aos-duration="1500">
+                            <div class="px-2 fifth-long-card" style="height: 360px;" data-aos="fade-up"
+                                data-aos-duration="1500">
                                 <div class="card scroll-card p-0 h-100">
-                                    <div class="card-body p-4">
-                                        <h3 class="mb-2">Institutional Solutions</h3>
-                                        <p class="card-text">
-                                            For family offices and institutional investors, we provide tailored advisory
-                                            services, large-scale asset structuring, and comprehensive reporting to
-                                            ensure operational efficiency and strategic alignment. </p>
+                                    <div class="card-body p-0">
+                                        <div class="inner-card-body">
+                                            <h3 class="mb-2">Institutional Solutions</h3>
+                                            <p class="card-text">
+                                                For family offices and institutional investors, we provide tailored
+                                                advisory
+                                                services, large-scale asset structuring, and comprehensive reporting to
+                                                ensure operational efficiency and strategic alignment. </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -816,12 +808,12 @@
         <!-- End About Me Section -->
 
         <!-- Start Services Section -->
-        <section id="Why-Choose-Cresco-scroll"
-            class="about-style-two-area container-fluid section-scroll">
+        <section id="Why-Choose-Cresco-scroll" class="about-style-two-area container-fluid section-scroll">
             <div class="custom-container">
                 <div class="row align-center custom-card-1">
                     <div class="col-12 col-lg-2 d-none d-lg-block"></div>
-                    <div class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
+                    <div
+                        class="col-12 col-md-12 col-lg-10 default-padding-right-120 custom-card-content d-flex flex-column justify-content-center">
                         <h2 class="title text-dark" style="">Why Choose <em>Cresco?</em></h2>
                         <div class="row g-3 mt-3 justify-content-center text-center">
                             <div class="col-12 col-md-6 px-2" data-aos="fade-up" data-aos-duration="1500">
@@ -834,7 +826,9 @@
                                             <h3 class="mb-0">Expertise Across Asset Classes</h3>
                                         </div>
                                         <p class="card-text">
-                                            With a multidisciplinary team of experts, we excel at identifying and managing opportunities across diverse sectors, ensuring a well-balanced and profitable portfolio.
+                                            With a multidisciplinary team of experts, we excel at identifying and
+                                            managing opportunities across diverse sectors, ensuring a well-balanced and
+                                            profitable portfolio.
                                         </p>
                                     </div>
                                 </div>
@@ -848,9 +842,11 @@
                                             </div>
                                             <h3 class="mb-0">Global Reach, Local Expertise</h3>
                                         </div>
-                                      
+
                                         <p class="card-text">
-                                            Our network spans key markets globally, giving us insights into both established and emerging opportunities while maintaining a deep understanding of local dynamics.
+                                            Our network spans key markets globally, giving us insights into both
+                                            established and emerging opportunities while maintaining a deep
+                                            understanding of local dynamics.
                                         </p>
                                     </div>
                                 </div>
@@ -864,9 +860,10 @@
                                             </div>
                                             <h3 class="mb-0">Innovative Solutions</h3>
                                         </div>
-                                    
+
                                         <p class="card-text">
-                                            Leveraging technology and pioneering research, we craft innovative strategies to maximise returns and minimise risk.
+                                            Leveraging technology and pioneering research, we craft innovative
+                                            strategies to maximise returns and minimise risk.
                                         </p>
                                     </div>
                                 </div>
@@ -880,9 +877,10 @@
                                             </div>
                                             <h3 class="mb-0">Personalised Service</h3>
                                         </div>
-                                        
+
                                         <p class="card-text">
-                                            Every client is unique, and so are our solutions. We pride ourselves on providing tailored advice and hands-on service for every investment journey.
+                                            Every client is unique, and so are our solutions. We pride ourselves on
+                                            providing tailored advice and hands-on service for every investment journey.
                                         </p>
                                     </div>
                                 </div>
@@ -895,8 +893,7 @@
         <!-- End Services Section -->
 
         <!-- Start Testimonials Section -->
-        <section id="Our-Commitment-scroll"
-            class="about-style-two-area container-fluid section-scroll">
+        <section id="Our-Commitment-scroll" class="about-style-two-area container-fluid section-scroll">
             <div class="custom-container">
                 <div class="row align-center custom-card-1">
                     <div class="col-12 col-lg-2 d-none d-lg-block"></div>
@@ -967,7 +964,8 @@
 
                 <div class="col-12 col-lg-2"></div>
 
-                <div class="col-12 col-md-5 col-lg-4 about-style-two custom-card-inner pb-4" data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="col-12 col-md-5 col-lg-4 about-style-two custom-card-inner pb-4" data-aos="zoom-in-up"
+                    data-aos-duration="1500">
                     <div class="card bg-secondary p-3 pb-5"
                         style="border-radius: 1rem !important; background: #e5e5e5 !important; border-color: #e5e5e5e5 !important;">
                         <div class="card-body pb-5">
@@ -982,8 +980,8 @@
                     </div>
                 </div>
 
-                <div
-                    class="about-style-two col-12 col-md-7 col-lg-5 offset-lg-1 custom-card-content d-flex flex-column justify-content-center" data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="about-style-two col-12 col-md-7 col-lg-5 offset-lg-1 custom-card-content d-flex flex-column justify-content-center"
+                    data-aos="zoom-in-up" data-aos-duration="1500">
                     <h2 class="text-dark">Create Your Own <br> Budget</h2>
                     <p>
                         Saving money is key to achieving your financial goals. Set up automatic transfers to a savings
@@ -996,8 +994,8 @@
 
                 <div class="col-12 col-lg-2"></div>
 
-                <div
-                    class="about-style-two col-12 col-md-7 col-lg-5 order-2 order-md-1 custom-card-content d-flex flex-column justify-content-center" data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="about-style-two col-12 col-md-7 col-lg-5 order-2 order-md-1 custom-card-content d-flex flex-column justify-content-center"
+                    data-aos="zoom-in-up" data-aos-duration="1500">
                     <h2 class="text-dark">Invest for your <br> Future</h2>
                     <p>
                         Investing is a great way to build wealth over time. Consider opening a retirement account or
@@ -1005,8 +1003,8 @@
                     </p>
                 </div>
 
-                <div
-                    class="col-12 col-md-5 col-lg-4 offset-lg-1 about-style-two order-1 order-md-2 custom-card-inner pb-4" data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="col-12 col-md-5 col-lg-4 offset-lg-1 about-style-two order-1 order-md-2 custom-card-inner pb-4"
+                    data-aos="zoom-in-up" data-aos-duration="1500">
                     <div class="card bg-dark p-3 card-3" style="border-radius: 1rem !important;">
                         <div class="card-body">
                             <h1 class="card-title text-white mb-5" style="line-height: 1 !important;">Invested <br>
@@ -1041,7 +1039,8 @@
                             <div class="f-item about">
                                 <img class="logo" src="assets/img/cresco-footer-logo.jpeg" alt="Logo">
                                 <p>
-                                    Excellence decisively nay man twins impression maximum contrasted remarkably is perfect.
+                                    Excellence decisively nay man twins impression maximum contrasted remarkably is
+                                    perfect.
                                 </p>
                                 <div class="opening-hours">
                                     <h5>Opening Hours</h5>
@@ -1141,7 +1140,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Start Footer Bottom -->
             <div class="footer-bottom">
                 <div class="container">
@@ -1166,7 +1165,7 @@
                 </div>
             </div>
             <!-- End Footer Bottom -->
-    
+
         </footer>
     </section>
     <!-- End Footer -->

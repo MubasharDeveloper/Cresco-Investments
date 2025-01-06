@@ -12496,3 +12496,63 @@ ul.list-regular li::after {
 .navbar-scroll {
 	z-index: 0 !important;
 }
+
+.scroll-card .card-body .inner-card-body{
+	background: #000000cc;
+    color: #fff !important;
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 0 175px;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.scroll-card:hover .card-body .inner-card-body{
+    height: 100%;
+}
+
+.scroll-card .card-body .inner-card-body h3{
+    color: #fff !important;
+	font-size: 44px;
+    font-weight: 200;
+}
+
+
+.scroll-card .card-body .inner-card-body p{
+	color: #fff !important;
+    font-size: 21px !important;
+    font-weight: 200;
+}
+
+@media(max-width: 768px){
+	.scroll-card .card-body .inner-card-body{
+		padding: 0 100px;
+		height: 100%;
+	}
+	.scroll-card .card-body .inner-card-body h3{
+		font-size: 38px;
+	}
+	.scroll-card .card-body .inner-card-body p{
+		font-size: 18px !important;
+	}
+}
+
+@media(max-width: 550px){
+	.scroll-card .card-body .inner-card-body{
+		padding: 0 30px;
+		height: 100%;
+	}
+	.scroll-card .card-body .inner-card-body h3{
+		font-size: 34px;
+	}
+	.scroll-card .card-body .inner-card-body p{
+		font-size: 16px !important;
+		line-height: 20px;
+	}
+}
