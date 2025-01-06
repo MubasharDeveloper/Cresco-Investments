@@ -721,7 +721,7 @@ p {
 
 .heading {
 	font-weight: 600;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	margin-top: -5px;
 	font-size: 42px;
 	line-height: 1.3;
@@ -8707,7 +8707,7 @@ footer .logo img {
 
 footer .logo {
 	margin-bottom: 30px;
-	height: 60px;
+	height: 100px;
 }
 
 footer .newsletter form {
@@ -12478,4 +12478,21 @@ ul.list-regular li::after {
     transition: all .5s ease-in-out;
 	background-color: #fff !important;
 	color: #000 !important;
+}
+
+/* .navbar-scroll {
+	z-index: 10 !important;
+}
+#Opportunities-scroll,
+#Why-Choose-Cresco-scroll,
+#Our-Commitment-scroll{
+  .row{
+		position: relative;
+		z-index: 10 !important;
+	}
+} */
+
+
+.navbar-scroll {
+	z-index: 0 !important;
 }

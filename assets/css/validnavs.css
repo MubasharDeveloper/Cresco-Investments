@@ -3278,3 +3278,63 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		color: var(--color-heading);
 	}
 }
+
+
+
+.heading{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	.heading-logo{
+		width: 50px; 
+		
+		& img{
+			width: 100%;
+		}
+	}
+}
+
+
+/* .increase-z-index{
+	position: relative;
+} */
+.first-long-card{
+	.card-body{
+		background-image: url(../img/pic1.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.second-long-card{
+	.card-body{
+		background-image: url(../img/pic2.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.third-long-card{
+	.card-body{
+		background-image: url(../img/pic3.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.fourth-long-card{
+	.card-body{
+		background-image: url(../img/pic4.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
+.fifth-long-card{
+	.card-body{
+		background-image: url(../img/pic5.jpg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	}
+}
