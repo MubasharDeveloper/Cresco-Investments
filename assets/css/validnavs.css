@@ -846,6 +846,7 @@ body {
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+	font-family: 'poppins' !important;
 }
 
 .side {
@@ -3357,3 +3358,66 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		/* border-radius: 20px; */
 	}
 }
+
+#Why-Choose-Cresco-scroll{
+	.card-text{
+		text-align: start;
+	}
+}
+#Opportunities-scroll,
+#Why-Choose-Cresco-scroll,
+#Our-Commitment-scroll{
+
+	& h2,
+	& h3{
+		color: #000 !important;
+		font-family: 'Times_New2';
+		background-color: transparent;
+	}
+	
+}
+/* #Why-Choose-Cresco-scroll{
+	& h3{
+		font-family: 'Times_New2';
+	}
+} */
+
+
+#Opportunities-scroll{
+	.first-long-card,
+	.second-long-card,
+	.third-long-card,
+		.fourth-long-card,
+		.fifth-long-card{
+		position: relative;
+		&:hover{
+.upper-heading{
+	display: none;
+}
+		}
+		.upper-heading{
+			position: absolute;
+			/* margin: 0 auto; */
+			/* top: 50%; */
+			bottom: 0;
+			/* transform: translate(-50% , -50%); */
+			left: 0;
+			right: 0;
+			& h3{
+				font-size: 40px !important;
+				background-color: #000000cc;
+				display: inline;
+				color: white !important;
+				padding: 16px 25px;
+				border-radius: 5px 5px 0 0;
+				transition: all ease-in-out 0.3s;
+
+			}
+			
+				}
+	}
+	
+
+}
+
+

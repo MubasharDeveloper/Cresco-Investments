@@ -83,8 +83,8 @@ Sidebar heading:  20px 'Outfit', sans-serif
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800;900&display=swap');
+
 
 
 /* Varialbes */
@@ -12396,6 +12396,7 @@ ul.list-regular li::after {
         height: 84% !important;
         position: relative;
 	}
+	
 }
 
 @media(max-width:1100px){
@@ -12541,6 +12542,14 @@ ul.list-regular li::after {
 	.scroll-card .card-body .inner-card-body p{
 		font-size: 18px !important;
 	}
+
+
+
+
+	.upper-heading{
+		display: none;
+		
+			}
 }
 
 @media(max-width: 550px){
@@ -12555,4 +12564,21 @@ ul.list-regular li::after {
 		font-size: 16px !important;
 		line-height: 20px;
 	}
+}
+.about-cresco-left-heading{
+	font-size: 80px !important;
+}
+
+@media(max-width:1250px){
+	.about-cresco-left-heading{
+		font-size: 40px !important;
+	}
+	
+}
+@media(max-width:750px){
+	.about-cresco-left-heading{
+		margin-top: 20px;
+		font-size: 30px !important;
+	}
+	
 }
