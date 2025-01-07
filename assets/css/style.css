@@ -12582,3 +12582,17 @@ ul.list-regular li::after {
 	}
 	
 }
+
+.collapse{
+	.nav{
+		& li{
+			& a{
+				&:hover{
+					background-color: transparent !important;
+					border-bottom: 1px solid white;
+				}
+			}
+			
+		}
+	}
+}
