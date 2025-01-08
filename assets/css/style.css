@@ -12472,7 +12472,7 @@ ul.list-regular li::after {
 	.btn-parrent {
 		width: 71%;
 		margin: 0 auto;
-		aspect-ratio: 16 / 9;
+		aspect-ratio: 9/16;
 		height: 86% !important;
 		position: relative;
 	}
@@ -12482,15 +12482,39 @@ ul.list-regular li::after {
 	.btn-parrent {
 		width: 73%;
 		margin: 0 auto;
-		aspect-ratio: 16 / 9;
+		aspect-ratio: 9/16;
 		height: 89% !important;
 		position: relative;
+	}
+	.btn-div{
+		position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    width: fit-content;
+    padding: 10px 25px;
+    background: #ffffff;
+    color: #000000 !important;
+    border-radius: 12px;
 	}
 }
 
 @media(max-width:768px) {
 	.btn-parrent {
-		display: none;
+		/* display: none; */
+	}
+	.btn-div{
+		position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    width: fit-content;
+    padding: 10px 25px;
+    background: #ffffff;
+    color: #000000 !important;
+    border-radius: 12px;
 	}
 }
 
@@ -12515,7 +12539,7 @@ ul.list-regular li::after {
 
 @media(max-width: 768px) {
 	.nav-bar-meeting-btn {
-		display: block;
+		/* display: block; */
 		padding: 4px 10px;
 		border-radius: 8px;
 		color: #000 !important;
@@ -12813,10 +12837,25 @@ ul.list-regular li::after {
 .hero-banner {
 	background-image: url('../img/Background-image.jpg');
 }
-
+@media(min-width:1000px){
+	.mobile-aspect-ratio{
+		aspect-ratio: 16/9 !important;
+		.banner-thumb{
+		aspect-ratio: 16/9 !important;
+	
+		}
+	}
+}
 @media(max-width: 999px) {
 	.hero-banner {
 		background-image: url('../img/mobile-banner.jpg');
 		background-position: top !important;
+	}
+	.mobile-aspect-ratio{
+		aspect-ratio: 9/16 !important;
+		.banner-thumb{
+		aspect-ratio: 9/16 !important;
+
+		}
 	}
 }
