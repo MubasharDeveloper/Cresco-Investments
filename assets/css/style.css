@@ -12566,7 +12566,9 @@ ul.list-regular li::after {
 	}
 }
 .about-cresco-left-heading{
-	font-size: 80px !important;
+	font-size: 110px !important;
+	font-family: 'bodoni_flf';
+	letter-spacing: -8px;
 }
 
 @media(max-width:1250px){
@@ -12575,13 +12577,7 @@ ul.list-regular li::after {
 	}
 	
 }
-@media(max-width:750px){
-	.about-cresco-left-heading{
-		margin-top: 20px;
-		font-size: 30px !important;
-	}
-	
-}
+
 
 .collapse{
 	.nav{
@@ -12595,4 +12591,87 @@ ul.list-regular li::after {
 			
 		}
 	}
+}
+
+
+
+@media(max-width : 1000px){
+	.bg-video-main-wrapper{
+		background-color: white !important;
+	.video-cover-div{
+		padding: 10px;
+		& video{
+			border-radius: 10px;
+
+		}
+	}
+	}
+}
+
+@media(max-width:750px){
+
+	.about-cresco-left-heading{
+		margin-top: 20px;
+		font-size: 55px !important;
+		font-family: 'bodoni_flf';
+		letter-spacing: -2px;
+
+	}
+	#Opportunities-scroll,
+#Why-Choose-Cresco-scroll,
+#Our-Commitment-scroll {
+
+	& h2{
+		color: #000 !important;
+		/* font-family: 'Times_New2'; */
+		font-family: 'bodoni_flf';
+		background-color: transparent;
+		font-size: 57px;
+		letter-spacing: -1px !important;
+		padding-left: 0;
+	}
+	& h3 {
+		color: #000 !important;
+		/* font-family: 'Times_New2'; */
+		font-family: 'bodoni_flf';
+		background-color: transparent;
+		letter-spacing: 0px !important;
+		font-size: 32px;
+	}
+
+}
+	
+}
+@media(max-width:550px){
+
+	.about-cresco-left-heading{
+		font-size: 35px !important;
+		font-family: 'bodoni_flf';
+		letter-spacing: -2px;
+
+	}
+	#Opportunities-scroll,
+#Why-Choose-Cresco-scroll,
+#Our-Commitment-scroll {
+
+	& h2{
+		color: #000 !important;
+		/* font-family: 'Times_New2'; */
+		font-family: 'bodoni_flf';
+		background-color: transparent;
+		font-size: 45px;
+		letter-spacing: -1px !important;
+		padding-left: 0;
+	}
+	& h3 {
+		color: #000 !important;
+		/* font-family: 'Times_New2'; */
+		font-family: 'bodoni_flf';
+		background-color: transparent;
+		letter-spacing: 0px !important;
+		font-size: 27px;
+	}
+
+}
+	
 }

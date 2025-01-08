@@ -3359,23 +3359,36 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 	}
 }
 
-#Why-Choose-Cresco-scroll{
-	.card-text{
+#Why-Choose-Cresco-scroll {
+	.card-text {
 		text-align: start;
 	}
 }
+
 #Opportunities-scroll,
 #Why-Choose-Cresco-scroll,
-#Our-Commitment-scroll{
+#Our-Commitment-scroll {
 
-	& h2,
-	& h3{
+	& h2{
 		color: #000 !important;
-		font-family: 'Times_New2';
+		/* font-family: 'Times_New2'; */
+		font-family: 'bodoni_flf';
 		background-color: transparent;
+		font-size: 70px;
+		letter-spacing: -1px !important;
+		padding-left: 0;
 	}
-	
+	& h3 {
+		color: #000 !important;
+		/* font-family: 'Times_New2'; */
+		font-family: 'bodoni_flf';
+		background-color: transparent;
+		letter-spacing: 0px !important;
+		font-size: 32px;
+	}
+
 }
+
 /* #Why-Choose-Cresco-scroll{
 	& h3{
 		font-family: 'Times_New2';
@@ -3383,27 +3396,27 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 } */
 
 
-#Opportunities-scroll{
+#Opportunities-scroll {
+
 	.first-long-card,
 	.second-long-card,
 	.third-long-card,
-		.fourth-long-card,
-		.fifth-long-card{
+	.fourth-long-card,
+	.fifth-long-card {
 		position: relative;
-		&:hover{
-.upper-heading{
-	display: none;
-}
+
+		&:hover {
+			.upper-heading {
+				display: none;
+			}
 		}
-		.upper-heading{
+
+		.upper-heading {
 			position: absolute;
-			/* margin: 0 auto; */
-			/* top: 50%; */
-			bottom: 0;
-			/* transform: translate(-50% , -50%); */
-			left: 0;
-			right: 0;
-			& h3{
+			bottom: 40px;
+			right: 40px;
+
+			& h3 {
 				font-size: 40px !important;
 				background-color: #000000cc;
 				display: inline;
@@ -3411,13 +3424,15 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 				padding: 16px 25px;
 				border-radius: 5px 5px 0 0;
 				transition: all ease-in-out 0.3s;
+				letter-spacing: 0;
 
 			}
-			
-				}
+
+		}
 	}
-	
+
 
 }
+
 
 
