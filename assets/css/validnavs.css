@@ -3370,7 +3370,6 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 
 	& h2 {
 		color: #000 !important;
-		/* font-family: 'Times_New2'; */
 		font-family: 'bodoni_flf';
 		background-color: transparent;
 		font-size: 70px;
@@ -3380,7 +3379,6 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 
 	& h3 {
 		color: #000 !important;
-		/* font-family: 'Times_New2'; */
 		font-family: 'bodoni_flf';
 		background-color: transparent;
 		letter-spacing: 0px !important;
