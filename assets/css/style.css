@@ -12708,7 +12708,7 @@ ul.list-regular li::after {
 
 }
 
-@media(max-width:550px) {
+@media(max-width:750px) {
 
 	.about-cresco-left-heading {
 		font-size: 42px !important;
@@ -12771,7 +12771,10 @@ ul.list-regular li::after {
 
 
 	#Why-Choose-Cresco-scroll {
-
+.heading{
+	align-items: start !important;
+	line-height: 0;
+}
 		& h2 {
 			color: #000 !important;
 			font-family: 'bodoni_flf' !important;
