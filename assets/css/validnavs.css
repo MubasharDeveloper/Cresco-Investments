@@ -3366,10 +3366,9 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 }
 
 #Opportunities-scroll,
-#Why-Choose-Cresco-scroll,
 #Our-Commitment-scroll {
 
-	& h2{
+	& h2 {
 		color: #000 !important;
 		/* font-family: 'Times_New2'; */
 		font-family: 'bodoni_flf';
@@ -3378,6 +3377,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		letter-spacing: -1px !important;
 		padding-left: 0;
 	}
+
 	& h3 {
 		color: #000 !important;
 		/* font-family: 'Times_New2'; */
@@ -3387,6 +3387,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 		font-size: 32px;
 	}
 
+	
 }
 
 /* #Why-Choose-Cresco-scroll{
@@ -3433,6 +3434,3 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 
 
 }
-
-
-
