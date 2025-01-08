@@ -12613,7 +12613,7 @@ ul.list-regular li::after {
 	.about-cresco-left-heading{
 		margin-top: 20px;
 		font-size: 55px !important;
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		letter-spacing: -2px;
 
 	}
@@ -12624,7 +12624,7 @@ ul.list-regular li::after {
 	& h2{
 		color: #000 !important;
 		/* font-family: 'Times_New2'; */
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		background-color: transparent;
 		font-size: 57px;
 		letter-spacing: -1px !important;
@@ -12634,7 +12634,7 @@ ul.list-regular li::after {
 	& h3 {
 		color: #000 !important;
 		/* font-family: 'Times_New2'; */
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		background-color: transparent;
 		letter-spacing: 0px !important;
 		font-size: 54px;
@@ -12651,14 +12651,15 @@ ul.list-regular li::after {
 @media(max-width:550px){
 
 	.about-cresco-left-heading{
-		font-size: 54px !important;
-		font-family: 'bodoni_flf';
+		font-size: 51px !important;
+		font-family: 'bodoni_flf' !important;
 		letter-spacing: -2px;
 
 	}
 	#goal{
 		.custom-card-content{
 			padding: 1rem 1.5rem !important;
+			/* font-size: 51px; */
 		}
 	}
 	#Opportunities-scroll,
@@ -12667,15 +12668,15 @@ ul.list-regular li::after {
 
 	& h2{
 		color: #000 !important;
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		background-color: transparent;
-		font-size: 50px;
+		font-size: 51px;
 		letter-spacing: -1px !important;
 		padding-left: 0;
 	}
 	& h3 {
 		color: #000 !important;
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		background-color: transparent;
 		letter-spacing: 0px !important;
 		font-size: 42px;
@@ -12694,15 +12695,15 @@ ul.list-regular li::after {
 
 	& h2{
 		color: #000 !important;
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		background-color: transparent;
-		font-size: 50px;
+		font-size: 51px;
 		letter-spacing: -1px !important;
 		padding-left: 0;
 	}
 	& h3 {
 		color: #000 !important;
-		font-family: 'bodoni_flf';
+		font-family: 'bodoni_flf' !important;
 		background-color: transparent;
 		letter-spacing: 0px !important;
 		font-size: 27px;
@@ -12714,21 +12715,13 @@ ul.list-regular li::after {
 
 
 
-.web-banner-changer{
-	background-image: url('../img/backgroung-img.jpg');
-}
-.mobile-banner-changer{
-	background-image: url('../img/mobile-banner.jpg');
-	display: none;
+.hero-banner{
+	background-image: url('../img/Background-image.jpg');
 }
 @media(max-width: 999px){
-	.mobile-banner-changer{
+	.hero-banner{
 		background-image: url('../img/mobile-banner.jpg');
-		display: block !important;
-	}
-	.web-banner-changer{
-		background-image: url('../img/backgroung-img.jpg');
-		display: none !important;
+		background-position: top !important;
 	}
 }
 
