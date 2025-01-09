@@ -12960,8 +12960,16 @@ ul.list-regular li::after {
 				height: 100%;
 			}
 		}
+		& p{
+			line-height: 24px;
+		}
 		.about-cresco-left-heading{
 			font-size: 48px;
+		}
+		& ul{
+			& li{
+				line-height: 24px;
+			}
 		}
 		.scroll-ul{
 			margin-bottom: 0 !important;
