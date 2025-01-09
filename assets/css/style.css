@@ -12486,17 +12486,18 @@ ul.list-regular li::after {
 		height: 89% !important;
 		position: relative;
 	}
-	.btn-div{
+
+	.btn-div {
 		position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    right: 0;
-    width: fit-content;
-    padding: 10px 25px;
-    background: #ffffff;
-    color: #000000 !important;
-    border-radius: 12px;
+		bottom: 0;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+		width: fit-content;
+		padding: 10px 25px;
+		background: #ffffff;
+		color: #000000 !important;
+		border-radius: 12px;
 	}
 }
 
@@ -12504,17 +12505,18 @@ ul.list-regular li::after {
 	.btn-parrent {
 		/* display: none; */
 	}
-	.btn-div{
+
+	.btn-div {
 		position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    right: 0;
-    width: fit-content;
-    padding: 10px 25px;
-    background: #ffffff;
-    color: #000000 !important;
-    border-radius: 12px;
+		bottom: 0;
+		left: 0;
+		margin: 0 auto;
+		right: 0;
+		width: fit-content;
+		padding: 10px 25px;
+		background: #ffffff;
+		color: #000000 !important;
+		border-radius: 12px;
 	}
 }
 
@@ -12604,29 +12606,82 @@ ul.list-regular li::after {
 	font-weight: 200;
 }
 
-@media(max-width: 768px) {
-	.scroll-card .card-body .inner-card-body {
-		padding: 0 100px;
-		height: 100%;
-	}
 
-	.scroll-card .card-body .inner-card-body h3 {
-		font-size: 38px;
-	}
+.about-cresco-left-heading {
+	font-size: 110px !important;
+	font-family: 'bodoni_flf';
+	letter-spacing: -8px;
+}
+.collapse {
+	.nav {
+		& li {
+			& a {
+				&:hover {
+					background-color: transparent !important;
+					border-bottom: 1px solid white;
+				}
+			}
 
-	.scroll-card .card-body .inner-card-body p {
-		font-size: 18px !important;
-	}
-
-
-
-
-	.upper-heading {
-		display: none;
-
+		}
 	}
 }
+#budget {
+	.about-style-two {
+		& h2 {
+			font-size: 51px;
+			font-family: 'bodoni_flf' !important;
 
+		}
+
+		.budget-custom-heading {
+			font-size: 50px;
+		}
+	}
+}
+.hero-banner {
+	background-image: url('../img/Background-image.jpg');
+}
+#Why-Choose-Cresco-scroll {
+	.heading {
+
+
+		& h3 {
+			text-align: left !important;
+		}
+	}
+}
+#Why-Choose-Cresco-scroll {
+	.heading {
+		align-items: start !important;
+		line-height: 0;
+
+		& h3 {
+			text-align: left !important;
+		}
+	}
+
+	& h2 {
+		color: #000 !important;
+		font-family: 'bodoni_flf' !important;
+		background-color: transparent;
+		font-size: 70px;
+		letter-spacing: -1px !important;
+		padding-left: 0;
+	}
+
+
+
+}
+#Opportunities-scroll {
+
+	& h3 {
+		color: #000 !important;
+		font-family: 'bodoni_flf' !important;
+		background-color: transparent;
+		letter-spacing: 0px !important;
+		font-size: 50px;
+	}
+}
 @media(max-width: 550px) {
 	.scroll-card .card-body .inner-card-body {
 		padding: 0 30px;
@@ -12643,49 +12698,11 @@ ul.list-regular li::after {
 	}
 }
 
-.about-cresco-left-heading {
-	font-size: 110px !important;
-	font-family: 'bodoni_flf';
-	letter-spacing: -8px;
-}
-
 @media(max-width:1250px) {
 	.about-cresco-left-heading {
 		font-size: 40px !important;
 	}
 
-}
-
-
-.collapse {
-	.nav {
-		& li {
-			& a {
-				&:hover {
-					background-color: transparent !important;
-					border-bottom: 1px solid white;
-				}
-			}
-
-		}
-	}
-}
-
-
-
-@media(max-width : 1000px) {
-	.bg-video-main-wrapper {
-		background-color: white !important;
-
-		.video-cover-div {
-			/* padding: 10px; */
-
-			& video {
-				/* border-radius: 10px; */
-
-			}
-		}
-	}
 }
 
 @media (max-width:1200px) and (min-width:750px) {
@@ -12731,7 +12748,97 @@ ul.list-regular li::after {
 	}
 
 }
+@media(max-width : 1000px) {
+	.bg-video-main-wrapper {
+		background-color: white !important;
 
+		.video-cover-div {
+			/* padding: 10px; */
+
+			& video {
+				/* border-radius: 10px; */
+
+			}
+		}
+	}
+}
+@media(min-width:1000px) {
+	.mobile-aspect-ratio {
+		aspect-ratio: 16/9 !important;
+
+		.banner-thumb {
+			aspect-ratio: 16/9 !important;
+
+		}
+	}
+}
+
+@media(max-width: 999px) {
+	.hero-banner {
+		background-image: url('../img/mobile-banner.jpg');
+		background-position: top !important;
+	}
+
+	.mobile-aspect-ratio {
+		aspect-ratio: 9/16 !important;
+
+		.banner-thumb {
+			aspect-ratio: 9/16 !important;
+
+		}
+	}
+}
+@media (max-width: 992px) {
+	#goal {
+		.about-cresco-card-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 999 !important;
+			background-color: #00000091;
+			/* padding: 0 !important; */
+			padding: 1rem;
+			height: 100%;
+		}
+
+		.about-cresco-left-heading {
+			margin-bottom: 5px;
+			color: white;
+		}
+
+		& p {
+			margin-bottom: 5px;
+			color: white;
+
+		}
+
+		& ul {
+			color: white;
+		}
+	}
+}
+@media(max-width: 768px) {
+	.scroll-card .card-body .inner-card-body {
+		padding: 0 100px;
+		height: 100%;
+	}
+
+	.scroll-card .card-body .inner-card-body h3 {
+		font-size: 38px;
+	}
+
+	.scroll-card .card-body .inner-card-body p {
+		font-size: 18px !important;
+	}
+
+
+
+
+	.upper-heading {
+		display: none;
+
+	}
+}
 @media(max-width:750px) {
 
 	.about-cresco-left-heading {
@@ -12754,7 +12861,7 @@ ul.list-regular li::after {
 		justify-content: start;
 	}
 
-	#Opportunities-scroll{
+	#Opportunities-scroll {
 		& h2 {
 			color: #000 !important;
 			font-family: 'bodoni_flf' !important;
@@ -12772,6 +12879,7 @@ ul.list-regular li::after {
 			font-size: 40px;
 		}
 	}
+
 	#Our-Commitment-scroll {
 
 		& h2 {
@@ -12788,20 +12896,22 @@ ul.list-regular li::after {
 			font-family: 'bodoni_flf' !important;
 			background-color: transparent;
 			letter-spacing: 0px !important;
-			font-size: 42px;
+			font-size: 42px !important;
 		}
 
 	}
 
 
 	#Why-Choose-Cresco-scroll {
-.heading{
-	align-items: start !important;
-	line-height: 0;
-	& h3{
-		text-align: left !important;
-	}
-}
+		.heading {
+			align-items: start !important;
+			line-height: 0;
+
+			& h3 {
+				text-align: left !important;
+			}
+		}
+
 		& h2 {
 			color: #000 !important;
 			font-family: 'bodoni_flf' !important;
@@ -12821,158 +12931,54 @@ ul.list-regular li::after {
 		}
 
 	}
-#budget{
-	.about-style-two{
-		& h2{
-			font-size: 51px;
-			font-family: 'bodoni_flf' !important;
 
-		}
-		.budget-custom-heading{
-			font-size: 45px;
-		}
-	}
-}
-}
-#budget{
-	.about-style-two{
-		& h2{
-			font-size: 51px;
-			font-family: 'bodoni_flf' !important;
-
-		}
-		.budget-custom-heading{
-			font-size: 50px;
-		}
-	}
-}
-
-
-.hero-banner {
-	background-image: url('../img/Background-image.jpg');
-}
-@media(min-width:1000px){
-	.mobile-aspect-ratio{
-		aspect-ratio: 16/9 !important;
-		.banner-thumb{
-		aspect-ratio: 16/9 !important;
-	
-		}
-	}
-}
-@media(max-width: 999px) {
-	.hero-banner {
-		background-image: url('../img/mobile-banner.jpg');
-		background-position: top !important;
-	}
-	.mobile-aspect-ratio{
-		aspect-ratio: 9/16 !important;
-		.banner-thumb{
-		aspect-ratio: 9/16 !important;
-
-		}
-	}
-}
-
-
-
-#Why-Choose-Cresco-scroll {
-	.heading{
-	
-		
-		& h3{
-			text-align: left !important;
-		}
-	}
-}
-
-
-#Why-Choose-Cresco-scroll {
-	.heading{
-		align-items: start !important;
-		line-height: 0;
-		& h3{
-			text-align: left !important;
-		}
-	}
+	#budget {
+		.about-style-two {
 			& h2 {
-				color: #000 !important;
+				font-size: 51px;
 				font-family: 'bodoni_flf' !important;
-				background-color: transparent;
-				font-size: 70px;
-				letter-spacing: -1px !important;
-				padding-left: 0;
+
 			}
-	
-			
-	
-		}
 
-
-		
-	#Opportunities-scroll{
-	
-		& h3 {
-			color: #000 !important;
-			font-family: 'bodoni_flf' !important;
-			background-color: transparent;
-			letter-spacing: 0px !important;
-			font-size: 50px;
+			.budget-custom-heading {
+				font-size: 45px;
+			}
 		}
 	}
+}
 
+@media (max-width: 450px) {
 
-	@media (max-width: 992px) {
-		.about-cresco-card-content{
+	#goal {
+		.about-cresco-card-content {
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 999 !important;
 			background-color: #00000091;
 			/* padding: 0 !important; */
-			padding: 1rem;
+			padding: 14px !important;
 			height: 100%;
 		}
-		.about-cresco-left-heading{
-			margin-bottom: 5px;
-			color: white;
-		}
-		& p{
-		margin-bottom: 5px;
-		color: white;
 
-		}
-		& ul{
-			color: white;
-		}
-	}
-	@media (max-width: 450px) {
-		        
-		#goal{
-			.about-cresco-card-content{
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: 999 !important;
-				background-color: #00000091;
-				/* padding: 0 !important; */
-				padding: 14px !important;
-				height: 100%;
-			}
-		}
-		& p{
+		& p {
 			line-height: 24px;
 		}
-		.about-cresco-left-heading{
+
+		.about-cresco-left-heading {
 			font-size: 48px;
 		}
-		& ul{
-			& li{
+
+		& ul {
+			& li {
 				line-height: 24px;
 			}
 		}
-		.scroll-ul{
+
+		.scroll-ul {
 			margin-bottom: 0 !important;
 			font-size: 14px !important;
 		}
 	}
+
+}
