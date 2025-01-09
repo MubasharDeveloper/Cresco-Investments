@@ -12678,17 +12678,17 @@ ul.list-regular li::after {
 		background-color: white !important;
 
 		.video-cover-div {
-			padding: 10px;
+			/* padding: 10px; */
 
 			& video {
-				border-radius: 10px;
+				/* border-radius: 10px; */
 
 			}
 		}
 	}
 }
 
-@media(max-width:750px) {
+@media (max-width:1200px) and (min-width:750px) {
 
 	.about-cresco-left-heading {
 		margin-top: 20px;
@@ -12918,5 +12918,53 @@ ul.list-regular li::after {
 			background-color: transparent;
 			letter-spacing: 0px !important;
 			font-size: 50px;
+		}
+	}
+
+
+	@media (max-width: 992px) {
+		.about-cresco-card-content{
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 999 !important;
+			background-color: #000000cc;
+			/* padding: 0 !important; */
+			padding: 1rem;
+			height: 100%;
+		}
+		.about-cresco-left-heading{
+			margin-bottom: 5px;
+			color: white;
+		}
+		& p{
+		margin-bottom: 5px;
+		color: white;
+
+		}
+		& ul{
+			color: white;
+		}
+	}
+	@media (max-width: 450px) {
+		        
+		#goal{
+			.about-cresco-card-content{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 999 !important;
+				background-color: #000000cc;
+				/* padding: 0 !important; */
+				padding: 14px !important;
+				height: 100%;
+			}
+		}
+		.about-cresco-left-heading{
+			font-size: 48px;
+		}
+		.scroll-ul{
+			margin-bottom: 0 !important;
+			font-size: 14px !important;
 		}
 	}
