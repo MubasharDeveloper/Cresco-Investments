@@ -12834,7 +12834,18 @@ ul.list-regular li::after {
 	}
 }
 }
+#budget{
+	.about-style-two{
+		& h2{
+			font-size: 51px;
+			font-family: 'bodoni_flf' !important;
 
+		}
+		.budget-custom-heading{
+			font-size: 50px;
+		}
+	}
+}
 
 
 .hero-banner {
@@ -12896,3 +12907,16 @@ ul.list-regular li::after {
 			
 	
 		}
+
+
+		
+	#Opportunities-scroll{
+	
+		& h3 {
+			color: #000 !important;
+			font-family: 'bodoni_flf' !important;
+			background-color: transparent;
+			letter-spacing: 0px !important;
+			font-size: 50px;
+		}
+	}
