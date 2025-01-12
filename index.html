@@ -461,6 +461,28 @@
         .thumb-nail-one-wrapper {
             aspect-ratio: 4/3;
         }
+
+        .nav-image {
+            display: none;
+            position: absolute;
+            width: 70px;
+            border-radius: 100%;
+            bottom: -30px;
+            background: #000;
+            padding: 10px !important;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .nav-image img{
+            width: 100%;
+        }
+
+        @media(max-width: 768px){
+            .nav-image{
+                display: flex;
+            }
+        }
     </style>
 
 </head>
@@ -507,6 +529,9 @@
             <!-- Overlay screen for menu -->
             <div class="overlay-screen"></div>
             <!-- End Overlay screen for menu -->
+            <div class="nav-image">
+                <img src="assets/img/cresco-footer-logo.jpeg" alt="Logo">
+            </div>
         </nav>
     </header>
 

@@ -12916,7 +12916,7 @@ ul.list-regular li::after {
 
 	#Why-Choose-Cresco-scroll {
 		.heading {
-			align-items: start !important;
+			align-items: center !important;
 			line-height: 0;
 
 			& h3 {
