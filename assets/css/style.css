@@ -12957,6 +12957,7 @@ ul.list-regular li::after {
 			}
 		}
 	}
+
 }
 
 @media (max-width: 450px) {
@@ -13006,3 +13007,4 @@ ul.list-regular li::after {
 	text-decoration: none;
 	background-color: #bd6b00;
 }
+
